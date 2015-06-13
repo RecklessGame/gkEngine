@@ -6,7 +6,29 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		133AB4B51B2C7A7B00800420 /* gkENGINE_CoreModule_OSX */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 133AB4B61B2C7A7B00800420 /* Build configuration list for PBXAggregateTarget "gkENGINE_CoreModule_OSX" */;
+			buildPhases = (
+			);
+			dependencies = (
+				133AB4BC1B2C7A9D00800420 /* PBXTargetDependency */,
+				133AB4BE1B2C7A9D00800420 /* PBXTargetDependency */,
+				133AB4C01B2C7A9D00800420 /* PBXTargetDependency */,
+				133AB4C21B2C7A9D00800420 /* PBXTargetDependency */,
+				133AB4C41B2C7A9D00800420 /* PBXTargetDependency */,
+				133AB4C61B2C7A9D00800420 /* PBXTargetDependency */,
+				133AB4C81B2C7A9D00800420 /* PBXTargetDependency */,
+				133AB4CA1B2C7A9D00800420 /* PBXTargetDependency */,
+			);
+			name = gkENGINE_CoreModule_OSX;
+			productName = gkENGINE_CoreModule_OSX;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		133AB4CC1B2CA64B00800420 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133AB4CB1B2CA64B00800420 /* OpenGL.framework */; };
 		A01A53831AC5C2AB00665B07 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09799571AC5BD8900173F60 /* EAGLView.mm */; };
 		A01A53841AC5C2AB00665B07 /* gkRenderContextIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09799591AC5BD8900173F60 /* gkRenderContextIOS.mm */; };
 		A01A53851AC5C2AB00665B07 /* TouchView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A097995E1AC5BD8A00173F60 /* TouchView.mm */; };
@@ -203,6 +225,65 @@
 		FF8A8BF015BECA300039AACB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8A8BA315BEC9990039AACB /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		133AB4BB1B2C7A9D00800420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A07D4AE11799AE0300C36005;
+			remoteInfo = gkRendererGL330;
+		};
+		133AB4BD1B2C7A9D00800420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8A8BC115BEC9F50039AACB;
+			remoteInfo = gkSystem;
+		};
+		133AB4BF1B2C7A9D00800420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8A8BD015BEC9FD0039AACB;
+			remoteInfo = gkInput;
+		};
+		133AB4C11B2C7A9D00800420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8A8BDF15BECA260039AACB;
+			remoteInfo = gkGameObjectSystem;
+		};
+		133AB4C31B2C7A9D00800420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8A8BEE15BECA300039AACB;
+			remoteInfo = gkGameFramework;
+		};
+		133AB4C51B2C7A9D00800420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03FCC8A1732B9C700FFA4DF;
+			remoteInfo = gkCore;
+		};
+		133AB4C71B2C7A9D00800420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A07D493D1786476D000F2DA7;
+			remoteInfo = gkFont;
+		};
+		133AB4C91B2C7A9D00800420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02235A218895A84004B1475;
+			remoteInfo = gkAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		A02235A118895A84004B1475 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -234,6 +315,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		133AB4CB1B2CA64B00800420 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
 		A01A53871AC5E0EF00665B07 /* glExtension.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glExtension.cpp; sourceTree = "<group>"; };
 		A01A53881AC5E0EF00665B07 /* glExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glExtension.h; sourceTree = "<group>"; };
 		A02235A318895A84004B1475 /* libgkAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgkAnimation.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -622,6 +704,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133AB4CC1B2CA64B00800420 /* OpenGL.framework in Frameworks */,
 				A0950EFE179BF797002C8759 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1396,6 +1479,7 @@
 		FF8A8BA215BEC9990039AACB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				133AB4CB1B2CA64B00800420 /* OpenGL.framework */,
 				A07D495D17865623000F2DA7 /* libfreetype2.a */,
 				A0950EFD179BF797002C8759 /* AppKit.framework */,
 				FF8A8BA315BEC9990039AACB /* Foundation.framework */,
@@ -1676,6 +1760,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					133AB4B51B2C7A7B00800420 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
 			};
 			buildConfigurationList = FF8A8B9515BEC96C0039AACB /* Build configuration list for PBXProject "gkENGINE_CoreModule" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1698,6 +1787,7 @@
 				A03FCC8A1732B9C700FFA4DF /* gkCore */,
 				A07D493D1786476D000F2DA7 /* gkFont */,
 				A02235A218895A84004B1475 /* gkAnimation */,
+				133AB4B51B2C7A7B00800420 /* gkENGINE_CoreModule_OSX */,
 			);
 		};
 /* End PBXProject section */
@@ -1891,6 +1981,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		133AB4BC1B2C7A9D00800420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A07D4AE11799AE0300C36005 /* gkRendererGL330 */;
+			targetProxy = 133AB4BB1B2C7A9D00800420 /* PBXContainerItemProxy */;
+		};
+		133AB4BE1B2C7A9D00800420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8A8BC115BEC9F50039AACB /* gkSystem */;
+			targetProxy = 133AB4BD1B2C7A9D00800420 /* PBXContainerItemProxy */;
+		};
+		133AB4C01B2C7A9D00800420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8A8BD015BEC9FD0039AACB /* gkInput */;
+			targetProxy = 133AB4BF1B2C7A9D00800420 /* PBXContainerItemProxy */;
+		};
+		133AB4C21B2C7A9D00800420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8A8BDF15BECA260039AACB /* gkGameObjectSystem */;
+			targetProxy = 133AB4C11B2C7A9D00800420 /* PBXContainerItemProxy */;
+		};
+		133AB4C41B2C7A9D00800420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8A8BEE15BECA300039AACB /* gkGameFramework */;
+			targetProxy = 133AB4C31B2C7A9D00800420 /* PBXContainerItemProxy */;
+		};
+		133AB4C61B2C7A9D00800420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03FCC8A1732B9C700FFA4DF /* gkCore */;
+			targetProxy = 133AB4C51B2C7A9D00800420 /* PBXContainerItemProxy */;
+		};
+		133AB4C81B2C7A9D00800420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A07D493D1786476D000F2DA7 /* gkFont */;
+			targetProxy = 133AB4C71B2C7A9D00800420 /* PBXContainerItemProxy */;
+		};
+		133AB4CA1B2C7A9D00800420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A02235A218895A84004B1475 /* gkAnimation */;
+			targetProxy = 133AB4C91B2C7A9D00800420 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		A02235BC18895A84004B1475 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -1903,6 +2036,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		133AB4B71B2C7A7B00800420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		133AB4B81B2C7A7B00800420 /* Debug-OSX */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Debug-OSX";
+		};
+		133AB4B91B2C7A7B00800420 /* Release-OSX */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Release-OSX";
+		};
+		133AB4BA1B2C7A7B00800420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A02235C218895A84004B1475 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2322,7 +2483,6 @@
 		A07D4AD41799ACBC00C36005 /* Debug-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
@@ -2341,7 +2501,7 @@
 					../thirdparty/rapidxml,
 					../thirdparty,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -2506,6 +2666,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks\"",
+					"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2518,9 +2679,15 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					gkCommon,
-					../thirdparty/rapidxml,
 					../thirdparty,
+					../thirdparty/rapidxml,
 					../thirdparty/oglsdk/include,
+					../thirdparty/glfw/include,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-L../thirdparty/glfw/lib",
+					"-lglfw",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2545,9 +2712,15 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					gkCommon,
-					../thirdparty/rapidxml,
 					../thirdparty,
+					../thirdparty/rapidxml,
 					../thirdparty/oglsdk/include,
+					../thirdparty/glfw/include,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-L../thirdparty/glfw/lib",
+					"-lglfw",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2561,6 +2734,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks\"",
+					"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2573,9 +2747,15 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					gkCommon,
-					../thirdparty/rapidxml,
 					../thirdparty,
+					../thirdparty/rapidxml,
 					../thirdparty/oglsdk/include,
+					../thirdparty/glfw/include,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-L../thirdparty/glfw/lib",
+					"-lglfw",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2584,7 +2764,6 @@
 		A0950F02179C3E9E002C8759 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
@@ -2603,7 +2782,7 @@
 					../thirdparty/rapidxml,
 					../thirdparty,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = macosx;
@@ -2630,9 +2809,15 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					gkCommon,
-					../thirdparty/rapidxml,
 					../thirdparty,
+					../thirdparty/rapidxml,
 					../thirdparty/oglsdk/include,
+					../thirdparty/glfw/include,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-L../thirdparty/glfw/lib",
+					"-lglfw",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2790,7 +2975,6 @@
 		FF8A8B9715BEC96C0039AACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
@@ -2808,7 +2992,7 @@
 					../thirdparty/rapidxml,
 					../thirdparty,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -2820,7 +3004,6 @@
 		FF8A8B9815BEC96C0039AACB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
@@ -2838,7 +3021,7 @@
 					../thirdparty/rapidxml,
 					../thirdparty,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LLVM_LTO = YES;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -3028,6 +3211,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		133AB4B61B2C7A7B00800420 /* Build configuration list for PBXAggregateTarget "gkENGINE_CoreModule_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133AB4B71B2C7A7B00800420 /* Debug */,
+				133AB4B81B2C7A7B00800420 /* Debug-OSX */,
+				133AB4B91B2C7A7B00800420 /* Release-OSX */,
+				133AB4BA1B2C7A7B00800420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A02235C118895A84004B1475 /* Build configuration list for PBXNativeTarget "gkAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

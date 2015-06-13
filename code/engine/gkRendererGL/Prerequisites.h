@@ -61,10 +61,11 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 #define glDrawArraysInstanced(X,Y,Z,W) glDrawArrays( X, Y, Z );
 
-#define GLF_BUFFER_OFFSET(i) ((char *)NULL + (i))
+//#define GLF_BUFFER_OFFSET(i) ((char *)NULL + (i))
 
 #endif
 
+#define GLF_BUFFER_OFFSET(i) ((char *)NULL + (i))
 
 #ifdef OS_WIN32
 
@@ -87,7 +88,11 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 #elif defined( OS_APPLE )
 
-#include <glo/glo.hpp>
+//#include <glo/glo.hpp>
+#import <OpenGL/OpenGL.h>
+#import <OpenGL/gl3.h>
+#import <OpenGL/gl3ext.h>
+#import <GL/glfw.h>
 
 #elif defined( OS_IOS )
 

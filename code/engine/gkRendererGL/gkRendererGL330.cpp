@@ -95,7 +95,7 @@ HWND gkRendererGL::Init(ISystemInitInfo& sii)
 	g_pRendererCVars = new gkRendererCVars;
 	
 #ifdef RENDERAPI_GL330
-	gl::init();
+//	gl::init();
 #endif
 
 	glGetIntegerv(GL_FRAMEBUFFER_BINDING, &m_backbufferFBO);
