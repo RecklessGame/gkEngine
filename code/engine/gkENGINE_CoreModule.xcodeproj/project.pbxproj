@@ -107,7 +107,6 @@
 		A07D4954178647F9000F2DA7 /* gkFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D494B178647F9000F2DA7 /* gkFont.cpp */; };
 		A07D4955178647F9000F2DA7 /* gkFontRenderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D494D178647F9000F2DA7 /* gkFontRenderable.cpp */; };
 		A07D4957178647F9000F2DA7 /* gkFTFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D4951178647F9000F2DA7 /* gkFTFont.cpp */; };
-		A07D495E17865623000F2DA7 /* libfreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A07D495D17865623000F2DA7 /* libfreetype2.a */; };
 		A07D4B3D1799AEC800C36005 /* StableHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D4B181799AEC800C36005 /* StableHeader.cpp */; };
 		A07D4B471799B31200C36005 /* dllmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D4B451799B31200C36005 /* dllmain.cpp */; };
 		A08C56F31734BE8500CA593D /* gkIOSLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = A08C56F11734BE8500CA593D /* gkIOSLog.mm */; };
@@ -695,7 +694,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A07D495E17865623000F2DA7 /* libfreetype2.a in Frameworks */,
 				A07D493F1786476D000F2DA7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2446,6 +2444,11 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/freetype/lib/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
 				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-L../thirdparty/freetype/lib",
+					"-lfreetype",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -2473,6 +2476,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/freetype/lib/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-L../thirdparty/freetype/lib",
+					"-lfreetype",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -2544,6 +2552,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					gkCommon,
+					../thirdparty,
+					../thirdparty/rapidxml,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/lzma/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
@@ -2654,6 +2667,11 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/freetype/lib/ios/$(CONFIGURATION)\"",
 				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-L../thirdparty/freetype/lib",
+					"-lfreetype",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -2681,8 +2699,8 @@
 					gkCommon,
 					../thirdparty,
 					../thirdparty/rapidxml,
-					../thirdparty/oglsdk/include,
 					../thirdparty/glfw/include,
+					../thirdparty/oglsdk/include,
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2714,8 +2732,8 @@
 					gkCommon,
 					../thirdparty,
 					../thirdparty/rapidxml,
-					../thirdparty/oglsdk/include,
 					../thirdparty/glfw/include,
+					../thirdparty/oglsdk/include,
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2749,8 +2767,8 @@
 					gkCommon,
 					../thirdparty,
 					../thirdparty/rapidxml,
-					../thirdparty/oglsdk/include,
 					../thirdparty/glfw/include,
+					../thirdparty/oglsdk/include,
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2811,8 +2829,8 @@
 					gkCommon,
 					../thirdparty,
 					../thirdparty/rapidxml,
-					../thirdparty/oglsdk/include,
 					../thirdparty/glfw/include,
+					../thirdparty/oglsdk/include,
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2857,6 +2875,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					gkCommon,
+					../thirdparty,
+					../thirdparty/rapidxml,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/lzma/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
@@ -2966,6 +2989,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/freetype/lib/ios/$(CONFIGURATION)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-L../thirdparty/freetype/lib",
+					"-lfreetype",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -3085,6 +3113,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					gkCommon,
+					../thirdparty,
+					../thirdparty/rapidxml,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/lzma/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
@@ -3102,6 +3135,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					gkCommon,
+					../thirdparty,
+					../thirdparty/rapidxml,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/lzma/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
@@ -3220,6 +3258,7 @@
 				133AB4BA1B2C7A7B00800420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A02235C118895A84004B1475 /* Build configuration list for PBXNativeTarget "gkAnimation" */ = {
 			isa = XCConfigurationList;

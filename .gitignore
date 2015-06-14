@@ -19,3 +19,7 @@ exec/builds/
 code/engine/solutions/Tegra-Android/
 exec/bin64/
 *.atc
+
+# xcode
+DerivedData/
+xcuserdata/
