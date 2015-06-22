@@ -7,24 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13C68C581B35D83F00EB562C /* libgkAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C4E1B35D83F00EB562C /* libgkAnimation.a */; };
+		13C68C591B35D83F00EB562C /* libgkCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C4F1B35D83F00EB562C /* libgkCore.a */; };
+		13C68C5A1B35D83F00EB562C /* libgkFont.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C501B35D83F00EB562C /* libgkFont.a */; };
+		13C68C5B1B35D83F00EB562C /* libgkGameFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C511B35D83F00EB562C /* libgkGameFramework.a */; };
+		13C68C5C1B35D83F00EB562C /* libgkGameObjectSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C521B35D83F00EB562C /* libgkGameObjectSystem.a */; };
+		13C68C5D1B35D83F00EB562C /* libgkInput.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C531B35D83F00EB562C /* libgkInput.a */; };
+		13C68C5E1B35D83F00EB562C /* libgkRendererGL330.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C541B35D83F00EB562C /* libgkRendererGL330.a */; };
+		13C68C601B35D83F00EB562C /* libgkSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C561B35D83F00EB562C /* libgkSystem.a */; };
+		13C68C611B35D83F00EB562C /* libTestCases.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C571B35D83F00EB562C /* libTestCases.a */; };
 		A06034E917999A1900B2F4C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06034E817999A1900B2F4C6 /* CoreGraphics.framework */; };
 		A06034EB17999A2200B2F4C6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06034EA17999A2200B2F4C6 /* IOKit.framework */; };
 		A06034EC17999A2D00B2F4C6 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F19FC117928FFD00F788C5 /* AppKit.framework */; };
 		A06034F417999FF100B2F4C6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06034E11799925D00B2F4C6 /* OpenGL.framework */; };
-		A0A7A08E17A9FD73003FC387 /* libgkCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7A08617A9FD73003FC387 /* libgkCore.a */; };
-		A0A7A08F17A9FD73003FC387 /* libgkFont.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7A08717A9FD73003FC387 /* libgkFont.a */; };
-		A0A7A09017A9FD73003FC387 /* libgkGameFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7A08817A9FD73003FC387 /* libgkGameFramework.a */; };
-		A0A7A09117A9FD73003FC387 /* libgkGameObjectSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7A08917A9FD73003FC387 /* libgkGameObjectSystem.a */; };
-		A0A7A09217A9FD73003FC387 /* libgkInput.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7A08A17A9FD73003FC387 /* libgkInput.a */; };
-		A0A7A09317A9FD73003FC387 /* libgkRendererGL330.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7A08B17A9FD73003FC387 /* libgkRendererGL330.a */; };
-		A0A7A09417A9FD73003FC387 /* libgkSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7A08C17A9FD73003FC387 /* libgkSystem.a */; };
-		A0A7A09517A9FD73003FC387 /* libTestCases.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7A08D17A9FD73003FC387 /* libTestCases.a */; };
-		A0A7A09717A9FD88003FC387 /* libglfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A7A09617A9FD88003FC387 /* libglfw.a */; };
 		A0F19FC917928FFD00F788C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0F19FC717928FFD00F788C5 /* InfoPlist.strings */; };
 		A0F19FCB17928FFD00F788C5 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0F19FCA17928FFD00F788C5 /* main.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13C68C4E1B35D83F00EB562C /* libgkAnimation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkAnimation.a; path = "../../exec/ios/Debug-iphoneos/libgkAnimation.a"; sourceTree = "<group>"; };
+		13C68C4F1B35D83F00EB562C /* libgkCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkCore.a; path = solutions/DerivedData/gkENGINE_xcode/Build/Products/libgkCore.a; sourceTree = "<group>"; };
+		13C68C501B35D83F00EB562C /* libgkFont.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkFont.a; path = solutions/DerivedData/gkENGINE_xcode/Build/Products/libgkFont.a; sourceTree = "<group>"; };
+		13C68C511B35D83F00EB562C /* libgkGameFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkGameFramework.a; path = solutions/DerivedData/gkENGINE_xcode/Build/Products/libgkGameFramework.a; sourceTree = "<group>"; };
+		13C68C521B35D83F00EB562C /* libgkGameObjectSystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkGameObjectSystem.a; path = solutions/DerivedData/gkENGINE_xcode/Build/Products/libgkGameObjectSystem.a; sourceTree = "<group>"; };
+		13C68C531B35D83F00EB562C /* libgkInput.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkInput.a; path = solutions/DerivedData/gkENGINE_xcode/Build/Products/libgkInput.a; sourceTree = "<group>"; };
+		13C68C541B35D83F00EB562C /* libgkRendererGL330.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkRendererGL330.a; path = solutions/DerivedData/gkENGINE_xcode/Build/Products/libgkRendererGL330.a; sourceTree = "<group>"; };
+		13C68C551B35D83F00EB562C /* libgkRendererGLES2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkRendererGLES2.a; path = "../../exec/ios/Debug-iphoneos/libgkRendererGLES2.a"; sourceTree = "<group>"; };
+		13C68C561B35D83F00EB562C /* libgkSystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkSystem.a; path = solutions/DerivedData/gkENGINE_xcode/Build/Products/libgkSystem.a; sourceTree = "<group>"; };
+		13C68C571B35D83F00EB562C /* libTestCases.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestCases.a; path = solutions/DerivedData/gkENGINE_xcode/Build/Products/libTestCases.a; sourceTree = "<group>"; };
 		A06034E11799925D00B2F4C6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		A06034E817999A1900B2F4C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A06034EA17999A2200B2F4C6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -52,15 +62,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0A7A08E17A9FD73003FC387 /* libgkCore.a in Frameworks */,
-				A0A7A08F17A9FD73003FC387 /* libgkFont.a in Frameworks */,
-				A0A7A09017A9FD73003FC387 /* libgkGameFramework.a in Frameworks */,
-				A0A7A09117A9FD73003FC387 /* libgkGameObjectSystem.a in Frameworks */,
-				A0A7A09217A9FD73003FC387 /* libgkInput.a in Frameworks */,
-				A0A7A09317A9FD73003FC387 /* libgkRendererGL330.a in Frameworks */,
-				A0A7A09417A9FD73003FC387 /* libgkSystem.a in Frameworks */,
-				A0A7A09517A9FD73003FC387 /* libTestCases.a in Frameworks */,
-				A0A7A09717A9FD88003FC387 /* libglfw.a in Frameworks */,
+				13C68C581B35D83F00EB562C /* libgkAnimation.a in Frameworks */,
+				13C68C591B35D83F00EB562C /* libgkCore.a in Frameworks */,
+				13C68C5A1B35D83F00EB562C /* libgkFont.a in Frameworks */,
+				13C68C5B1B35D83F00EB562C /* libgkGameFramework.a in Frameworks */,
+				13C68C5C1B35D83F00EB562C /* libgkGameObjectSystem.a in Frameworks */,
+				13C68C5D1B35D83F00EB562C /* libgkInput.a in Frameworks */,
+				13C68C5E1B35D83F00EB562C /* libgkRendererGL330.a in Frameworks */,
+				13C68C601B35D83F00EB562C /* libgkSystem.a in Frameworks */,
+				13C68C611B35D83F00EB562C /* libTestCases.a in Frameworks */,
 				A06034F417999FF100B2F4C6 /* OpenGL.framework in Frameworks */,
 				A06034EC17999A2D00B2F4C6 /* AppKit.framework in Frameworks */,
 				A06034EB17999A2200B2F4C6 /* IOKit.framework in Frameworks */,
@@ -103,6 +113,16 @@
 		A0F19FBD17928FFD00F788C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13C68C4E1B35D83F00EB562C /* libgkAnimation.a */,
+				13C68C4F1B35D83F00EB562C /* libgkCore.a */,
+				13C68C501B35D83F00EB562C /* libgkFont.a */,
+				13C68C511B35D83F00EB562C /* libgkGameFramework.a */,
+				13C68C521B35D83F00EB562C /* libgkGameObjectSystem.a */,
+				13C68C531B35D83F00EB562C /* libgkInput.a */,
+				13C68C541B35D83F00EB562C /* libgkRendererGL330.a */,
+				13C68C551B35D83F00EB562C /* libgkRendererGLES2.a */,
+				13C68C561B35D83F00EB562C /* libgkSystem.a */,
+				13C68C571B35D83F00EB562C /* libTestCases.a */,
 				A0F19FBE17928FFD00F788C5 /* Cocoa.framework */,
 				A0F19FC017928FFD00F788C5 /* Other Frameworks */,
 			);
@@ -163,7 +183,7 @@
 		A0F19FB317928FFD00F788C5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = kkstudio;
 			};
 			buildConfigurationList = A0F19FB617928FFD00F788C5 /* Build configuration list for PBXProject "gkLauncherMac" */;
@@ -221,7 +241,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -262,7 +281,6 @@
 		A07D4BB5179A38FC00C36005 /* Debug-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "gkLauncherMac/gkLauncherMac-Info.plist";
@@ -273,6 +291,8 @@
 					"\"$(SRCROOT)/../thirdparty/OGLSDK/lib\"",
 					"\"$(SRCROOT)/../../exec/ios/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../../exec/ios/Debug-OSX\"",
+					"/Users/zhudelun/Documents/MyWork/@github.com/gkEngine/exec/ios/Debug-iphoneos",
+					"$(PROJECT_DIR)/solutions/DerivedData/gkENGINE_xcode/Build/Products",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -283,7 +303,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -324,7 +343,6 @@
 		A0950F01179C3E5F002C8759 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "gkLauncherMac/gkLauncherMac-Info.plist";
@@ -335,6 +353,8 @@
 					"\"$(SRCROOT)/../thirdparty/OGLSDK/lib\"",
 					"\"$(SRCROOT)/../../exec/ios/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../../exec/ios/Debug-OSX\"",
+					"/Users/zhudelun/Documents/MyWork/@github.com/gkEngine/exec/ios/Debug-iphoneos",
+					"$(PROJECT_DIR)/solutions/DerivedData/gkENGINE_xcode/Build/Products",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -345,7 +365,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -377,6 +396,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = macosx;
 				SYMROOT = "../../exec/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -387,7 +407,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -426,7 +445,6 @@
 		A0F19FD917928FFD00F788C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "gkLauncherMac/gkLauncherMac-Info.plist";
@@ -437,6 +455,8 @@
 					"\"$(SRCROOT)/../thirdparty/OGLSDK/lib\"",
 					"\"$(SRCROOT)/../../exec/ios/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../../exec/ios/Debug-OSX\"",
+					"/Users/zhudelun/Documents/MyWork/@github.com/gkEngine/exec/ios/Debug-iphoneos",
+					"$(PROJECT_DIR)/solutions/DerivedData/gkENGINE_xcode/Build/Products",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -446,7 +466,6 @@
 		A0F19FDA17928FFD00F788C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "gkLauncherMac/gkLauncherMac-Info.plist";
@@ -457,6 +476,8 @@
 					"\"$(SRCROOT)/../thirdparty/OGLSDK/lib\"",
 					"\"$(SRCROOT)/../../exec/ios/Debug-iphoneos\"",
 					"\"$(SRCROOT)/../../exec/ios/Debug-OSX\"",
+					"/Users/zhudelun/Documents/MyWork/@github.com/gkEngine/exec/ios/Debug-iphoneos",
+					"$(PROJECT_DIR)/solutions/DerivedData/gkENGINE_xcode/Build/Products",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

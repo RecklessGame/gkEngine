@@ -160,7 +160,7 @@
 		A068A2B8173567410059BCF3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = gameKnife;
 			};
 			buildConfigurationList = A068A2BB173567410059BCF3 /* Build configuration list for PBXProject "TestCases" */;
@@ -208,7 +208,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -230,6 +229,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OBJROOT = "../../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SYMROOT = "../../../exec/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 			};
@@ -239,7 +239,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
