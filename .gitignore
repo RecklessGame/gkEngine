@@ -23,3 +23,5 @@ exec/bin64/
 # xcode
 DerivedData/
 xcuserdata/
+*.app/
+

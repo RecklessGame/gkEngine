@@ -65,31 +65,32 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 #endif
 
-#include <afxwin.h>         // MFC core and standard components
-#include <afxext.h>         // MFC extensions
-#include <afxdisp.h>        // MFC Automation classes
+//#include <afxwin.h>         // MFC core and standard components
+//#include <afxext.h>         // MFC extensions
+//#include <afxdisp.h>        // MFC Automation classes
+//
+//#ifndef _AFX_NO_AFXCMN_SUPPORT
+//#include <afxcmn.h>         // MFC support for Windows Common Controls
+//#endif // _AFX_NO_AFXCMN_SUPPORT
+//
+//#include <afxrich.h>		// MFC rich edit classes
+//
+//#include <XTToolkitPro.h>   // Codejock Software Components
 
-#ifndef _AFX_NO_AFXCMN_SUPPORT
-#include <afxcmn.h>         // MFC support for Windows Common Controls
-#endif // _AFX_NO_AFXCMN_SUPPORT
+#include <wx/wxprec.h>
+#ifndef WX_PRECOMP
+#   include <wx/wx.h>
+#endif
 
-
-
- 
-#include <afxrich.h>		// MFC rich edit classes
-
-#include <XTToolkitPro.h>   // Codejock Software Components
-//#include <AboutDlg.h>       // Sample About Dialog
- 
 
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
 
-#include "ISystem.h"
-#include "IRenderer.h"
-#include "IEditor.h"
-#include "IGameObject.h"
-#include "IGameFramework.h"
+//#include "ISystem.h"
+//#include "IRenderer.h"
+//#include "IEditor.h"
+//#include "IGameObject.h"
+//#include "IGameFramework.h"
 
 #endif // !defined(AFX_STDAFX_H__7103B18C_74F7_4CA9_98C6_520F14F7C29F__INCLUDED_)
