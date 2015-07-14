@@ -537,6 +537,7 @@
 		13B64DCE1B410D57009D938E /* WorkspaceTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkspaceTitle.h; path = ../../../gkstudio/WorkspaceTitle.h; sourceTree = "<group>"; };
 		13B64DCF1B410D57009D938E /* WorkspaceView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WorkspaceView.cpp; path = ../../../gkstudio/WorkspaceView.cpp; sourceTree = "<group>"; };
 		13B64DD01B410D57009D938E /* WorkspaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkspaceView.h; path = ../../../gkstudio/WorkspaceView.h; sourceTree = "<group>"; };
+		13E95D691B557DCF009F44F4 /* MFCForWxWidgets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MFCForWxWidgets.h; path = ../../../gkstudio/MFCForWxWidgets.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -613,6 +614,7 @@
 				13B64DC31B410D56009D938E /* StartBanner.h */,
 				13B64DC41B410D56009D938E /* StdAfx.cpp */,
 				13B64DC51B410D56009D938E /* StdAfx.h */,
+				13E95D691B557DCF009F44F4 /* MFCForWxWidgets.h */,
 				13B64DC61B410D56009D938E /* Styles */,
 				13B64DCA1B410D56009D938E /* Utils */,
 				13B64DCD1B410D56009D938E /* WorkspaceTitle.cpp */,
@@ -1546,6 +1548,7 @@
 				13B64CA11B410A56009D938E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

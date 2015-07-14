@@ -82,6 +82,7 @@ Copyright (c) 2011-2015 Kaiming Yi
 #   include <wx/wx.h>
 #endif
 
+#include "MFCForWxWidgets.h"
 
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
