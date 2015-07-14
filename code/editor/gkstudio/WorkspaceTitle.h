@@ -27,7 +27,7 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 #pragma once
 #include "resource.h"
-#include "afxwin.h"
+#include "stdafx.h"
 
 // CWorkspaceTitle dialog
 

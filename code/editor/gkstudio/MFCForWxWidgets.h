@@ -9,12 +9,20 @@
 #ifndef gkStudio_MFCForWxWidgets_h
 #define gkStudio_MFCForWxWidgets_h
 
-#define BOOL        bool
-#define VOID        void
-#define INT         int32_t
-#define LONG        long
+typedef bool    BOOL;
+typedef void    VOID;
+typedef int32_t INT;
+typedef uint32_t    UINT;
+typedef long    LONG;
+typedef char    TCHAR;
 
-#define TCHAR       char
+//#define BOOL        bool
+//#define VOID        void
+//#define INT         int32_t
+//#define UINT        uint32_t
+//#define LONG        long
+//
+//#define TCHAR       char
 
 #define afx_msg     
 
@@ -71,7 +79,7 @@
 #define CScrollBar 	wxScrollBar
 #define CSliderCtrl 	wxSlider
 #define CSpinButtonCtrl 	wxSpinButton, wxSpinCtrl
-#define CStatic 	wxStaticText, wxStaticLine, wxStaticBox, wxStaticBitmap
+#define CStatic         wxStaticText, wxStaticLine, wxStaticBox, wxStaticBitmap
 #define CStatusBarCtrl 	wxStatusBar
 #define CTabCtrl 	wxTabCtrl
 #define CToolBarCtrl 	wxToolBar
