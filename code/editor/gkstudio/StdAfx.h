@@ -77,11 +77,6 @@ Copyright (c) 2011-2015 Kaiming Yi
 //
 //#include <XTToolkitPro.h>   // Codejock Software Components
 
-#include <wx/wxprec.h>
-#ifndef WX_PRECOMP
-#   include <wx/wx.h>
-#endif
-
 #include "MFCForWxWidgets.h"
 
 //{{AFX_INSERT_LOCATION}}

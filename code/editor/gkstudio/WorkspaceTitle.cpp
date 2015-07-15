@@ -3,7 +3,8 @@
 
 #include "stdafx.h"
 #include "WorkspaceTitle.h"
-#include "afxdialogex.h"
+//#include "afxdialogex.h"
+#include <wx/dialog.h>
 
 
 // CWorkspaceTitle dialog
@@ -30,9 +31,8 @@ void CWorkspaceTitle::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(CWorkspaceTitle, CXTResizeDialog)
 	ON_BN_CLICKED(IDC_WORKSPACE_SHOWHELPER, &CWorkspaceTitle::OnBnClickedWorkspaceShowhelper)
-//	ON_WM_CTLCOLOR()
-ON_WM_CTLCOLOR()
-ON_WM_ERASEBKGND()
+    ON_WM_CTLCOLOR()
+    ON_WM_ERASEBKGND()
 END_MESSAGE_MAP()
 //////////////////////////////////////////////////////////////////////////
 BOOL CWorkspaceTitle::OnInitDialog()

@@ -9,12 +9,19 @@
 #ifndef gkStudio_MFCForWxWidgets_h
 #define gkStudio_MFCForWxWidgets_h
 
+#include <wx/wxprec.h>
+#ifndef WX_PRECOMP
+#   include <wx/wx.h>
+#endif
+
+#include <wx/app.h>
+#include <wx/docview.h>
+
 typedef bool    BOOL;
 typedef void    VOID;
 typedef int32_t INT;
 typedef uint32_t    UINT;
 typedef long    LONG;
-typedef char    TCHAR;
 
 //#define BOOL        bool
 //#define VOID        void
@@ -34,6 +41,12 @@ typedef char    TCHAR;
 #define IMPLEMENT_DYNCREATE IMPLEMENT_DYNAMIC_CLASS
 
 #define RUNTIME_CLASS       CLASSINFO
+
+#if 1
+typedef wxChar  TCHAR;
+typedef wxApp   CWinApp;
+
+#else 
 
 #define CWinApp             wxApp
 #define CObject             wxObject
@@ -142,5 +155,7 @@ typedef char    TCHAR;
 #define CCriticalSection 	wxCriticalSection
 #define CMutex 	wxMutex
 #define CSemaphore 	wxSemaphore
+
+#endif      //// 0 -> 1
 
 #endif

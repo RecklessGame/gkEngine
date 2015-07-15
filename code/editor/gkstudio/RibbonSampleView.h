@@ -36,7 +36,7 @@ class CRibbonSampleView : public CView
 {
 protected: // create from serialization only
 	CRibbonSampleView();
-	DECLARE_DYNCREATE(CRibbonSampleView)
+    DECLARE_DYNCREATE(CRibbonSampleView);
 
 	// Attributes
 public:
