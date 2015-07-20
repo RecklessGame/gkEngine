@@ -1,4 +1,4 @@
-#include "gkAnimationHavok.h"
+#include "gkAnimation.h"
 #include "gkHavokLoader.h"
 #include "CharacterInstance.h"
 #include "gkHkxMeshLoader.h"
@@ -23,17 +23,17 @@ static void HK_CALL gkHavokErrorReport(const char* msg, void* userArgGivenToInit
 	printf("%s", msg);
 }
 
-gkAnimationHavok::gkAnimationHavok(void)
+gkAnimation::gkAnimation(void)
 {
 	m_havokLoader = NULL;
 }
 
 
-gkAnimationHavok::~gkAnimationHavok(void)
+gkAnimation::~gkAnimation(void)
 {
 }
 
-void gkAnimationHavok::InitAnimation()
+void gkAnimation::InitAnimation()
 {
 	//
 	// Initialize the base system including our memory system
@@ -101,7 +101,7 @@ void gkAnimationHavok::InitAnimation()
 	m_animationManager.Init();
 }
 
-void gkAnimationHavok::DestroyAnimation()
+void gkAnimation::DestroyAnimation()
 {
 	m_rigManager.Destroy();
 	m_animationManager.Destroy();
@@ -109,7 +109,7 @@ void gkAnimationHavok::DestroyAnimation()
 	delete m_havokLoader;
 }
 
-IGameObjectAnimLayer* gkAnimationHavok::CreateAnimLayer(const gkStdString& name)
+IGameObjectAnimLayer* gkAnimation::CreateAnimLayer(const gkStdString& name)
 {
 	// check if we got one
 	AnimLayerMap::iterator it = m_mapAnimLayers.find(name);
@@ -129,7 +129,7 @@ IGameObjectAnimLayer* gkAnimationHavok::CreateAnimLayer(const gkStdString& name)
 	return pCI;
 }
 
-void gkAnimationHavok::DestroyAnimLayer(const gkStdString& name)
+void gkAnimation::DestroyAnimLayer(const gkStdString& name)
 {
 	// check if we got one
 	AnimLayerMap::iterator it = m_mapAnimLayers.find(name);
@@ -145,7 +145,7 @@ void gkAnimationHavok::DestroyAnimLayer(const gkStdString& name)
 	m_mapAnimLayers.erase(it);
 }
 
-void gkAnimationHavok::DestroyAllAnimLayer()
+void gkAnimation::DestroyAllAnimLayer()
 {
 	AnimLayerMap::iterator it = m_mapAnimLayers.begin();
 	for (; it != m_mapAnimLayers.end(); ++it)
@@ -155,12 +155,12 @@ void gkAnimationHavok::DestroyAllAnimLayer()
 	m_mapAnimLayers.clear();
 }
 
-IMeshLoader* gkAnimationHavok::getHKXMeshLoader()
+IMeshLoader* gkAnimation::getHKXMeshLoader()
 {
 	return (new gkHkxMeshLoader() );
 }
 
-void gkAnimationHavok::_updateAnimation(float fElapsedTime)
+void gkAnimation::_updateAnimation(float fElapsedTime)
 {
     
 	//throw std::logic_error("The method or operation is not implemented.");

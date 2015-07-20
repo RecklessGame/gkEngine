@@ -31,6 +31,7 @@
 			buildPhases = (
 			);
 			dependencies = (
+				139C32391B5CC60500F82386 /* PBXTargetDependency */,
 				139C31E71B5CA71200F82386 /* PBXTargetDependency */,
 				139C31D31B5CA70400F82386 /* PBXTargetDependency */,
 				139C31D51B5CA70400F82386 /* PBXTargetDependency */,
@@ -38,7 +39,6 @@
 				139C31D91B5CA70400F82386 /* PBXTargetDependency */,
 				139C31DB1B5CA70400F82386 /* PBXTargetDependency */,
 				139C31DD1B5CA70400F82386 /* PBXTargetDependency */,
-				139C31DF1B5CA70400F82386 /* PBXTargetDependency */,
 			);
 			name = gkENGINE_CoreModule_iOS;
 			productName = gkENGINE_CoreModule_OSX;
@@ -49,16 +49,33 @@
 		133AB4CC1B2CA64B00800420 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133AB4CB1B2CA64B00800420 /* OpenGL.framework */; };
 		139C31CB1B5C9B9600F82386 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139C31CA1B5C9B9600F82386 /* AppKit.framework */; };
 		139C31CF1B5C9BBE00F82386 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139C31CE1B5C9BBE00F82386 /* AGL.framework */; };
+		139C31EA1B5CC48B00F82386 /* AnimationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F485891AB5A53500DD38D8 /* AnimationManager.cpp */; };
+		139C31EB1B5CC48B00F82386 /* gkHkxMeshLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F4858B1AB5A53500DD38D8 /* gkHkxMeshLoader.cpp */; };
+		139C31EC1B5CC48B00F82386 /* RigManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F4858D1AB5A53500DD38D8 /* RigManager.cpp */; };
+		139C31ED1B5CC48B00F82386 /* CharacterInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F485811AB5A51C00DD38D8 /* CharacterInstance.cpp */; };
+		139C31EE1B5CC48B00F82386 /* gkSkinRenderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F485831AB5A51C00DD38D8 /* gkSkinRenderable.cpp */; };
+		139C31EF1B5CC48B00F82386 /* gkHavokAssetManagementUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F4859B1AB5A54400DD38D8 /* gkHavokAssetManagementUtil.cpp */; };
+		139C31F01B5CC48B00F82386 /* gkAnimationHavok.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A02235D918896788004B1475 /* gkAnimationHavok.cpp */; };
+		139C31F11B5CC48B00F82386 /* dllmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A02235D818896788004B1475 /* dllmain.cpp */; };
+		139C31F21B5CC48B00F82386 /* gkHavokLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A02235DD18896788004B1475 /* gkHavokLoader.cpp */; };
+		139C31F31B5CC48B00F82386 /* StableHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A02235E018896788004B1475 /* StableHeader.cpp */; };
+		139C31F51B5CC48B00F82386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8A8BA315BEC9990039AACB /* Foundation.framework */; };
+		139C322B1B5CC58F00F82386 /* AnimationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32151B5CC58F00F82386 /* AnimationManager.cpp */; };
+		139C322C1B5CC58F00F82386 /* CharacterInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32171B5CC58F00F82386 /* CharacterInstance.cpp */; };
+		139C322D1B5CC58F00F82386 /* dllmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32191B5CC58F00F82386 /* dllmain.cpp */; };
+		139C322E1B5CC58F00F82386 /* gkAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C321A1B5CC58F00F82386 /* gkAnimation.cpp */; };
+		139C322F1B5CC58F00F82386 /* gkAssetManagementUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C321E1B5CC58F00F82386 /* gkAssetManagementUtil.cpp */; };
+		139C32301B5CC58F00F82386 /* gkAnimationLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32201B5CC58F00F82386 /* gkAnimationLoader.cpp */; };
+		139C32311B5CC58F00F82386 /* gkHkxMeshLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32221B5CC58F00F82386 /* gkHkxMeshLoader.cpp */; };
+		139C32321B5CC58F00F82386 /* gkSkinRenderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32241B5CC58F00F82386 /* gkSkinRenderable.cpp */; };
+		139C32331B5CC58F00F82386 /* RigManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32271B5CC58F00F82386 /* RigManager.cpp */; };
+		139C32341B5CC58F00F82386 /* StableHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32291B5CC58F00F82386 /* StableHeader.cpp */; };
 		A01A53831AC5C2AB00665B07 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09799571AC5BD8900173F60 /* EAGLView.mm */; };
 		A01A53841AC5C2AB00665B07 /* gkRenderContextIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09799591AC5BD8900173F60 /* gkRenderContextIOS.mm */; };
 		A01A53851AC5C2AB00665B07 /* TouchView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A097995E1AC5BD8A00173F60 /* TouchView.mm */; };
 		A01A538A1AC5E0EF00665B07 /* glExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = A01A53881AC5E0EF00665B07 /* glExtension.h */; };
 		A01A538B1AC5E12D00665B07 /* glExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A01A53871AC5E0EF00665B07 /* glExtension.cpp */; };
 		A02235A418895A84004B1475 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8A8BA315BEC9990039AACB /* Foundation.framework */; };
-		A02235EA18896788004B1475 /* dllmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A02235D818896788004B1475 /* dllmain.cpp */; };
-		A02235EB18896788004B1475 /* gkAnimationHavok.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A02235D918896788004B1475 /* gkAnimationHavok.cpp */; };
-		A02235EC18896788004B1475 /* gkHavokLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A02235DD18896788004B1475 /* gkHavokLoader.cpp */; };
-		A02235ED18896788004B1475 /* StableHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A02235E018896788004B1475 /* StableHeader.cpp */; };
 		A03FCC8C1732B9C700FFA4DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8A8BA315BEC9990039AACB /* Foundation.framework */; };
 		A03FCD261732C1B600FFA4DF /* gk3DEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0583590172D27AB00B168C8 /* gk3DEngine.cpp */; };
 		A03FCD271732C1B600FFA4DF /* gkParticleInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0583595172D27AB00B168C8 /* gkParticleInstance.cpp */; };
@@ -230,12 +247,6 @@
 		A0F4859A1AB5A53500DD38D8 /* RigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A0F4858E1AB5A53500DD38D8 /* RigManager.h */; };
 		A0F4859F1AB5A54400DD38D8 /* gkHavokAssetManagementUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A0F4859C1AB5A54400DD38D8 /* gkHavokAssetManagementUtil.h */; };
 		A0F485A01AB5A54400DD38D8 /* gkHavokAssetManagementUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A0F4859C1AB5A54400DD38D8 /* gkHavokAssetManagementUtil.h */; };
-		A0F485A31AB5A58C00DD38D8 /* AnimationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F485891AB5A53500DD38D8 /* AnimationManager.cpp */; };
-		A0F485A41AB5A58C00DD38D8 /* gkHkxMeshLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F4858B1AB5A53500DD38D8 /* gkHkxMeshLoader.cpp */; };
-		A0F485A51AB5A58C00DD38D8 /* RigManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F4858D1AB5A53500DD38D8 /* RigManager.cpp */; };
-		A0F485A61AB5A58C00DD38D8 /* CharacterInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F485811AB5A51C00DD38D8 /* CharacterInstance.cpp */; };
-		A0F485A71AB5A58C00DD38D8 /* gkSkinRenderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F485831AB5A51C00DD38D8 /* gkSkinRenderable.cpp */; };
-		A0F485A81AB5A58C00DD38D8 /* gkHavokAssetManagementUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0F4859B1AB5A54400DD38D8 /* gkHavokAssetManagementUtil.cpp */; };
 		FF8A8BB415BEC9ED0039AACB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8A8BA315BEC9990039AACB /* Foundation.framework */; };
 		FF8A8BC315BEC9F50039AACB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8A8BA315BEC9990039AACB /* Foundation.framework */; };
 		FF8A8BD215BEC9FD0039AACB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8A8BA315BEC9990039AACB /* Foundation.framework */; };
@@ -342,13 +353,6 @@
 			remoteGlobalIDString = A07D493D1786476D000F2DA7;
 			remoteInfo = gkFont;
 		};
-		139C31E01B5CA70400F82386 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A02235A218895A84004B1475;
-			remoteInfo = gkAnimation;
-		};
 		139C31E61B5CA71200F82386 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
@@ -356,9 +360,25 @@
 			remoteGlobalIDString = FF8A8BB215BEC9ED0039AACB;
 			remoteInfo = gkRendererGLES2;
 		};
+		139C32381B5CC60500F82386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 139C31E81B5CC48B00F82386;
+			remoteInfo = gkAnimationHavok;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		139C31F61B5CC48B00F82386 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A02235A118895A84004B1475 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,6 +413,27 @@
 		139C31CA1B5C9B9600F82386 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
 		139C31CC1B5C9BAE00F82386 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
 		139C31CE1B5C9BBE00F82386 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AGL.framework; sourceTree = DEVELOPER_DIR; };
+		139C31FC1B5CC48B00F82386 /* libgkAnimation copy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libgkAnimation copy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		139C32151B5CC58F00F82386 /* AnimationManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationManager.cpp; sourceTree = "<group>"; };
+		139C32161B5CC58F00F82386 /* AnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationManager.h; sourceTree = "<group>"; };
+		139C32171B5CC58F00F82386 /* CharacterInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharacterInstance.cpp; sourceTree = "<group>"; };
+		139C32181B5CC58F00F82386 /* CharacterInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterInstance.h; sourceTree = "<group>"; };
+		139C32191B5CC58F00F82386 /* dllmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dllmain.cpp; sourceTree = "<group>"; };
+		139C321A1B5CC58F00F82386 /* gkAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkAnimation.cpp; sourceTree = "<group>"; };
+		139C321B1B5CC58F00F82386 /* gkAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gkAnimation.h; sourceTree = "<group>"; };
+		139C321E1B5CC58F00F82386 /* gkAssetManagementUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkAssetManagementUtil.cpp; sourceTree = "<group>"; };
+		139C321F1B5CC58F00F82386 /* gkAssetManagementUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gkAssetManagementUtil.h; sourceTree = "<group>"; };
+		139C32201B5CC58F00F82386 /* gkAnimationLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkAnimationLoader.cpp; sourceTree = "<group>"; };
+		139C32211B5CC58F00F82386 /* gkAnimationLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gkAnimationLoader.h; sourceTree = "<group>"; };
+		139C32221B5CC58F00F82386 /* gkHkxMeshLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkHkxMeshLoader.cpp; sourceTree = "<group>"; };
+		139C32231B5CC58F00F82386 /* gkHkxMeshLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gkHkxMeshLoader.h; sourceTree = "<group>"; };
+		139C32241B5CC58F00F82386 /* gkSkinRenderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkSkinRenderable.cpp; sourceTree = "<group>"; };
+		139C32251B5CC58F00F82386 /* gkSkinRenderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gkSkinRenderable.h; sourceTree = "<group>"; };
+		139C32261B5CC58F00F82386 /* prerequistes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prerequistes.h; sourceTree = "<group>"; };
+		139C32271B5CC58F00F82386 /* RigManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RigManager.cpp; sourceTree = "<group>"; };
+		139C32281B5CC58F00F82386 /* RigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigManager.h; sourceTree = "<group>"; };
+		139C32291B5CC58F00F82386 /* StableHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StableHeader.cpp; sourceTree = "<group>"; };
+		139C322A1B5CC58F00F82386 /* StableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StableHeader.h; sourceTree = "<group>"; };
 		A01A53871AC5E0EF00665B07 /* glExtension.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glExtension.cpp; sourceTree = "<group>"; };
 		A01A53881AC5E0EF00665B07 /* glExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glExtension.h; sourceTree = "<group>"; };
 		A02235A318895A84004B1475 /* libgkAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgkAnimation.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -752,6 +793,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		139C31F41B5CC48B00F82386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139C31F51B5CC48B00F82386 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A02235A018895A84004B1475 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -829,6 +878,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139C32141B5CC58F00F82386 /* gkAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				139C32371B5CC5A600F82386 /* utils */,
+				139C32361B5CC59F00F82386 /* character */,
+				139C32351B5CC59900F82386 /* assets */,
+				139C32191B5CC58F00F82386 /* dllmain.cpp */,
+				139C321A1B5CC58F00F82386 /* gkAnimation.cpp */,
+				139C321B1B5CC58F00F82386 /* gkAnimation.h */,
+				139C32201B5CC58F00F82386 /* gkAnimationLoader.cpp */,
+				139C32211B5CC58F00F82386 /* gkAnimationLoader.h */,
+				139C32261B5CC58F00F82386 /* prerequistes.h */,
+				139C32291B5CC58F00F82386 /* StableHeader.cpp */,
+				139C322A1B5CC58F00F82386 /* StableHeader.h */,
+			);
+			path = gkAnimation;
+			sourceTree = "<group>";
+		};
+		139C32351B5CC59900F82386 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				139C32151B5CC58F00F82386 /* AnimationManager.cpp */,
+				139C32161B5CC58F00F82386 /* AnimationManager.h */,
+				139C32221B5CC58F00F82386 /* gkHkxMeshLoader.cpp */,
+				139C32231B5CC58F00F82386 /* gkHkxMeshLoader.h */,
+				139C32271B5CC58F00F82386 /* RigManager.cpp */,
+				139C32281B5CC58F00F82386 /* RigManager.h */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		139C32361B5CC59F00F82386 /* character */ = {
+			isa = PBXGroup;
+			children = (
+				139C32171B5CC58F00F82386 /* CharacterInstance.cpp */,
+				139C32181B5CC58F00F82386 /* CharacterInstance.h */,
+				139C32241B5CC58F00F82386 /* gkSkinRenderable.cpp */,
+				139C32251B5CC58F00F82386 /* gkSkinRenderable.h */,
+			);
+			name = character;
+			sourceTree = "<group>";
+		};
+		139C32371B5CC5A600F82386 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				139C321E1B5CC58F00F82386 /* gkAssetManagementUtil.cpp */,
+				139C321F1B5CC58F00F82386 /* gkAssetManagementUtil.h */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
 		A01A53861AC5C49A00665B07 /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1521,9 +1621,10 @@
 		FF8A8B9015BEC96C0039AACB = {
 			isa = PBXGroup;
 			children = (
+				139C32141B5CC58F00F82386 /* gkAnimation */,
+				A02235CB18896788004B1475 /* gkAnimationHavok */,
 				A098BFA11A3CA9540044ACE2 /* Shaders */,
 				A01A53861AC5C49A00665B07 /* Renderer */,
-				A02235CB18896788004B1475 /* gkAnimationHavok */,
 				A0D17CDB172E3D29001EBD1C /* gkCommon */,
 				A0D17C8F172E3CA0001EBD1C /* gkSystem */,
 				A058363B172D280A00B168C8 /* gkInput */,
@@ -1549,6 +1650,7 @@
 				A07D493E1786476D000F2DA7 /* libgkFont.a */,
 				A07D4AE21799AE0300C36005 /* libgkRendererGL330.a */,
 				A02235A318895A84004B1475 /* libgkAnimation.a */,
+				139C31FC1B5CC48B00F82386 /* libgkAnimation copy.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1680,6 +1782,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		139C31E81B5CC48B00F82386 /* gkAnimationHavok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 139C31F71B5CC48B00F82386 /* Build configuration list for PBXNativeTarget "gkAnimationHavok" */;
+			buildPhases = (
+				139C31E91B5CC48B00F82386 /* Sources */,
+				139C31F41B5CC48B00F82386 /* Frameworks */,
+				139C31F61B5CC48B00F82386 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gkAnimationHavok;
+			productName = gkAnimation;
+			productReference = 139C31FC1B5CC48B00F82386 /* libgkAnimation copy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		A02235A218895A84004B1475 /* gkAnimation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A02235C118895A84004B1475 /* Build configuration list for PBXNativeTarget "gkAnimation" */;
@@ -1866,6 +1985,7 @@
 				FF8A8BEE15BECA300039AACB /* gkGameFramework */,
 				A03FCC8A1732B9C700FFA4DF /* gkCore */,
 				A07D493D1786476D000F2DA7 /* gkFont */,
+				139C31E81B5CC48B00F82386 /* gkAnimationHavok */,
 				A02235A218895A84004B1475 /* gkAnimation */,
 				133AB4B51B2C7A7B00800420 /* gkENGINE_CoreModule_OSX */,
 				139C31D01B5CA70400F82386 /* gkENGINE_CoreModule_iOS */,
@@ -1874,20 +1994,37 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		139C31E91B5CC48B00F82386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139C31EA1B5CC48B00F82386 /* AnimationManager.cpp in Sources */,
+				139C31EB1B5CC48B00F82386 /* gkHkxMeshLoader.cpp in Sources */,
+				139C31EC1B5CC48B00F82386 /* RigManager.cpp in Sources */,
+				139C31ED1B5CC48B00F82386 /* CharacterInstance.cpp in Sources */,
+				139C31EE1B5CC48B00F82386 /* gkSkinRenderable.cpp in Sources */,
+				139C31EF1B5CC48B00F82386 /* gkHavokAssetManagementUtil.cpp in Sources */,
+				139C31F01B5CC48B00F82386 /* gkAnimationHavok.cpp in Sources */,
+				139C31F11B5CC48B00F82386 /* dllmain.cpp in Sources */,
+				139C31F21B5CC48B00F82386 /* gkHavokLoader.cpp in Sources */,
+				139C31F31B5CC48B00F82386 /* StableHeader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A022359F18895A84004B1475 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0F485A31AB5A58C00DD38D8 /* AnimationManager.cpp in Sources */,
-				A0F485A41AB5A58C00DD38D8 /* gkHkxMeshLoader.cpp in Sources */,
-				A0F485A51AB5A58C00DD38D8 /* RigManager.cpp in Sources */,
-				A0F485A61AB5A58C00DD38D8 /* CharacterInstance.cpp in Sources */,
-				A0F485A71AB5A58C00DD38D8 /* gkSkinRenderable.cpp in Sources */,
-				A0F485A81AB5A58C00DD38D8 /* gkHavokAssetManagementUtil.cpp in Sources */,
-				A02235EB18896788004B1475 /* gkAnimationHavok.cpp in Sources */,
-				A02235EA18896788004B1475 /* dllmain.cpp in Sources */,
-				A02235EC18896788004B1475 /* gkHavokLoader.cpp in Sources */,
-				A02235ED18896788004B1475 /* StableHeader.cpp in Sources */,
+				139C32301B5CC58F00F82386 /* gkAnimationLoader.cpp in Sources */,
+				139C32331B5CC58F00F82386 /* RigManager.cpp in Sources */,
+				139C322C1B5CC58F00F82386 /* CharacterInstance.cpp in Sources */,
+				139C32311B5CC58F00F82386 /* gkHkxMeshLoader.cpp in Sources */,
+				139C322B1B5CC58F00F82386 /* AnimationManager.cpp in Sources */,
+				139C322E1B5CC58F00F82386 /* gkAnimation.cpp in Sources */,
+				139C32321B5CC58F00F82386 /* gkSkinRenderable.cpp in Sources */,
+				139C322D1B5CC58F00F82386 /* dllmain.cpp in Sources */,
+				139C32341B5CC58F00F82386 /* StableHeader.cpp in Sources */,
+				139C322F1B5CC58F00F82386 /* gkAssetManagementUtil.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2133,15 +2270,15 @@
 			target = A07D493D1786476D000F2DA7 /* gkFont */;
 			targetProxy = 139C31DE1B5CA70400F82386 /* PBXContainerItemProxy */;
 		};
-		139C31DF1B5CA70400F82386 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A02235A218895A84004B1475 /* gkAnimation */;
-			targetProxy = 139C31E01B5CA70400F82386 /* PBXContainerItemProxy */;
-		};
 		139C31E71B5CA71200F82386 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FF8A8BB215BEC9ED0039AACB /* gkRendererGLES2 */;
 			targetProxy = 139C31E61B5CA71200F82386 /* PBXContainerItemProxy */;
+		};
+		139C32391B5CC60500F82386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 139C31E81B5CC48B00F82386 /* gkAnimationHavok */;
+			targetProxy = 139C32381B5CC60500F82386 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2210,6 +2347,326 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "gkENGINE_CoreModule_OSX copy";
+			};
+			name = Release;
+		};
+		139C31F81B5CC48B00F82386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/gkAnimation.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					HK_ANARCHY,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VBASE_LIB,
+					LINK_WITH_VISION,
+					VISIONDLL_LIB,
+					"$(inherited)",
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					gkCommon,
+					../thirdparty/rapidxml,
+					../thirdparty,
+					../thirdparty/havoksdk/source,
+				);
+				LIBRARY_SEARCH_PATHS = ../thirdparty/havoksdk/lib/ios_armv7/dev;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DHK_ANARCHY",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-D_DEBUG",
+					"-DHK_DEBUG",
+					"-DHK_DEBUG_SLOW",
+					"-fno-inline",
+					"-fno-rtti",
+					"$(OTHER_CFLAGS)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lhkaAnimation",
+					"-lhkaiInternal",
+					"-lhkaInternal",
+					"-lhkBase",
+					"-lhkbInternal",
+					"-lhkbUtilities",
+					"-lhkcdCollide",
+					"-lhkcdInternal",
+					"-lhkCompat",
+					"-lhkGeometryUtilities",
+					"-lhkInternal",
+					"-lhkSceneData",
+					"-lhkSerialize",
+				);
+				PRODUCT_NAME = "gkAnimation copy";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		139C31F91B5CC48B00F82386 /* Debug-OSX */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/gkAnimation.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					gkCommon,
+					../thirdparty/rapidxml,
+					../thirdparty,
+					../thirdparty/havoksdk/source,
+				);
+				LIBRARY_SEARCH_PATHS = ../thirdparty/havoksdk/lib/ios_armv7/dev;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DHK_ANARCHY",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-D_DEBUG",
+					"-DHK_DEBUG",
+					"-DHK_DEBUG_SLOW",
+					"-fno-inline",
+					"-fno-rtti",
+					"$(OTHER_CFLAGS)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lhkaAnimation",
+					"-lhkaiInternal",
+					"-lhkaInternal",
+					"-lhkBase",
+					"-lhkbInternal",
+					"-lhkbUtilities",
+					"-lhkcdCollide",
+					"-lhkcdInternal",
+					"-lhkCompat",
+					"-lhkGeometryUtilities",
+					"-lhkInternal",
+					"-lhkSceneData",
+					"-lhkSerialize",
+				);
+				PRODUCT_NAME = "gkAnimation copy";
+				SKIP_INSTALL = YES;
+			};
+			name = "Debug-OSX";
+		};
+		139C31FA1B5CC48B00F82386 /* Release-OSX */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/gkAnimation.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					gkCommon,
+					../thirdparty/rapidxml,
+					../thirdparty,
+					../thirdparty/havoksdk/source,
+				);
+				LIBRARY_SEARCH_PATHS = ../thirdparty/havoksdk/lib/ios_armv7/dev;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DHK_ANARCHY",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-D_DEBUG",
+					"-DHK_DEBUG",
+					"-DHK_DEBUG_SLOW",
+					"-fno-inline",
+					"-fno-rtti",
+					"$(OTHER_CFLAGS)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lhkaAnimation",
+					"-lhkaiInternal",
+					"-lhkaInternal",
+					"-lhkBase",
+					"-lhkbInternal",
+					"-lhkbUtilities",
+					"-lhkcdCollide",
+					"-lhkcdInternal",
+					"-lhkCompat",
+					"-lhkGeometryUtilities",
+					"-lhkInternal",
+					"-lhkSceneData",
+					"-lhkSerialize",
+				);
+				PRODUCT_NAME = "gkAnimation copy";
+				SKIP_INSTALL = YES;
+			};
+			name = "Release-OSX";
+		};
+		139C31FB1B5CC48B00F82386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/gkAnimation.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HK_ANARCHY,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VBASE_LIB,
+					LINK_WITH_VISION,
+					VISIONDLL_LIB,
+					_STATIC_LIB,
+					_7ZIP_ST,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					gkCommon,
+					../thirdparty/rapidxml,
+					../thirdparty,
+					../thirdparty/havoksdk/source,
+				);
+				LIBRARY_SEARCH_PATHS = ../thirdparty/havoksdk/lib/ios_armv7/dev;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DHK_ANARCHY",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-D_DEBUG",
+					"-DHK_DEBUG",
+					"-DHK_DEBUG_SLOW",
+					"-fno-inline",
+					"-fno-rtti",
+					"$(OTHER_CFLAGS)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lhkaAnimation",
+					"-lhkaiInternal",
+					"-lhkaInternal",
+					"-lhkBase",
+					"-lhkbInternal",
+					"-lhkbUtilities",
+					"-lhkcdCollide",
+					"-lhkcdInternal",
+					"-lhkCompat",
+					"-lhkGeometryUtilities",
+					"-lhkInternal",
+					"-lhkSceneData",
+					"-lhkSerialize",
+				);
+				PRODUCT_NAME = "gkAnimation copy";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -3430,6 +3887,17 @@
 				139C31E31B5CA70400F82386 /* Debug-OSX */,
 				139C31E41B5CA70400F82386 /* Release-OSX */,
 				139C31E51B5CA70400F82386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		139C31F71B5CC48B00F82386 /* Build configuration list for PBXNativeTarget "gkAnimationHavok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				139C31F81B5CC48B00F82386 /* Debug */,
+				139C31F91B5CC48B00F82386 /* Debug-OSX */,
+				139C31FA1B5CC48B00F82386 /* Release-OSX */,
+				139C31FB1B5CC48B00F82386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

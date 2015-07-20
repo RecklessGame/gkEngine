@@ -32,8 +32,8 @@ Copyright (c) 2011-2015 Kaiming Yi
 #include "IAnimation.h"
 #include "ISystem.h"
 
-#include <Common/Base/hkBase.h>
-#include <Common/Base/Container/String/hkStringBuf.h>
-#include <Common/Base/Ext/hkBaseExt.h>
+//#include <Common/Base/hkBase.h>
+//#include <Common/Base/Container/String/hkStringBuf.h>
+//#include <Common/Base/Ext/hkBaseExt.h>
 
-class gkAnimationHavok* getAnimationPtr();
+class gkAnimation* getAnimationPtr();

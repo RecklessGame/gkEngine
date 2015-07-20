@@ -5,7 +5,7 @@
 #include "gkPlatform_impl.h"
 #endif
 
-#include "gkAnimationHavok.h"
+#include "gkAnimation.h"
 
 // Platform initialization
 //#include <Common/Base/System/Init/PlatformInit.cxx>
@@ -40,9 +40,9 @@
 
 //gkHavok* g_Havok;
 
-class gkAnimationHavok* g_Animation;
+class gkAnimation* g_Animation;
 
-gkAnimationHavok* getAnimationPtr()
+gkAnimation* getAnimationPtr()
 {
 	return g_Animation;
 };
@@ -71,7 +71,7 @@ void gkLoadStaticModule_gkAnimation(SSystemGlobalEnvironment* pEnv)
 	if (pEnv)
 	{
 		gEnv = pEnv;
-		g_Animation = new gkAnimationHavok();
+		g_Animation = new gkAnimation();
 		pEnv->pAnimation = g_Animation;
 	}
 }

@@ -51,11 +51,11 @@ struct IMeshLoader;
 class hkLoader;
 class gkCharacterInstance;
 
-class gkAnimationHavok : public IAnimation
+class gkAnimation : public IAnimation
 {
 public:
-	gkAnimationHavok(void);
-	~gkAnimationHavok(void);
+	gkAnimation(void);
+	~gkAnimation(void);
 
 	virtual void InitAnimation();
 
