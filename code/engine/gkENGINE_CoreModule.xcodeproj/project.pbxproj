@@ -2065,6 +2065,7 @@
 		A02235C218895A84004B1475 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -2099,7 +2100,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
 					../thirdparty/rapidxml,
 					../thirdparty,
@@ -2107,7 +2107,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = ../thirdparty/havoksdk/lib/ios_armv7/dev;
 				OTHER_CPLUSPLUSFLAGS = (
-					"$(inherited)",
 					"-fno-strict-aliasing",
 					"-std=c++98",
 					"-mfpu=neon",
@@ -2125,6 +2124,7 @@
 					"-DHK_DEBUG_SLOW",
 					"-fno-inline",
 					"-fno-rtti",
+					"$(OTHER_CFLAGS)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2150,6 +2150,7 @@
 		A02235C318895A84004B1475 /* Debug-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -2176,7 +2177,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
 					../thirdparty/rapidxml,
 					../thirdparty,
@@ -2184,7 +2184,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = ../thirdparty/havoksdk/lib/ios_armv7/dev;
 				OTHER_CPLUSPLUSFLAGS = (
-					"$(inherited)",
 					"-fno-strict-aliasing",
 					"-std=c++98",
 					"-mfpu=neon",
@@ -2202,6 +2201,7 @@
 					"-DHK_DEBUG_SLOW",
 					"-fno-inline",
 					"-fno-rtti",
+					"$(OTHER_CFLAGS)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2227,6 +2227,7 @@
 		A02235C418895A84004B1475 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -2249,7 +2250,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
 					../thirdparty/rapidxml,
 					../thirdparty,
@@ -2257,7 +2257,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = ../thirdparty/havoksdk/lib/ios_armv7/dev;
 				OTHER_CPLUSPLUSFLAGS = (
-					"$(inherited)",
 					"-fno-strict-aliasing",
 					"-std=c++98",
 					"-mfpu=neon",
@@ -2275,6 +2274,7 @@
 					"-DHK_DEBUG_SLOW",
 					"-fno-inline",
 					"-fno-rtti",
+					"$(OTHER_CFLAGS)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2300,6 +2300,7 @@
 		A02235C518895A84004B1475 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -2334,7 +2335,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
 					../thirdparty/rapidxml,
 					../thirdparty,
@@ -2342,7 +2342,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = ../thirdparty/havoksdk/lib/ios_armv7/dev;
 				OTHER_CPLUSPLUSFLAGS = (
-					"$(inherited)",
 					"-fno-strict-aliasing",
 					"-std=c++98",
 					"-mfpu=neon",
@@ -2360,6 +2359,7 @@
 					"-DHK_DEBUG_SLOW",
 					"-fno-inline",
 					"-fno-rtti",
+					"$(OTHER_CFLAGS)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2505,7 +2505,6 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
 					../thirdparty/rapidxml,
 					../thirdparty,
@@ -2513,7 +2512,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = macosx;
 				SYMROOT = "../../exec/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -2798,14 +2796,12 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
 					../thirdparty/rapidxml,
 					../thirdparty,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = macosx;
 				SYMROOT = "../../exec/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -3020,7 +3016,6 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
 					../thirdparty/rapidxml,
 					../thirdparty,
@@ -3028,7 +3023,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SYMROOT = "../../exec/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -3051,7 +3045,6 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
 					../thirdparty/rapidxml,
 					../thirdparty,
@@ -3059,7 +3052,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LLVM_LTO = YES;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SYMROOT = "../../exec/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";

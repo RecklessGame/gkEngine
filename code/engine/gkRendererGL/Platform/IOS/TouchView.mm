@@ -150,7 +150,7 @@ SIOSInputDelegate* g_IOSInputDelegate = NULL;
         SIOSInputEvent iievent;
         iievent.motionType = eIET_finger;
         iievent.motionState = eIES_IOSstart;
-        iievent.deviceIdx = (uintptr_t)touch;
+        iievent.deviceIdx = (int)touch;
         iievent.asyncPos.x = pt.x;
         iievent.asyncPos.y = pt.y;
         
@@ -182,7 +182,7 @@ SIOSInputDelegate* g_IOSInputDelegate = NULL;
         SIOSInputEvent iievent;
         iievent.motionType = eIET_finger;
         iievent.motionState = eIES_IOSchange;
-        iievent.deviceIdx = (uintptr_t)touch;
+        iievent.deviceIdx = (int)touch;
         iievent.asyncPos.x = pt.x;
         iievent.asyncPos.y = pt.y;
         
@@ -216,7 +216,7 @@ SIOSInputDelegate* g_IOSInputDelegate = NULL;
         SIOSInputEvent iievent;
         iievent.motionType = eIET_finger;
         iievent.motionState = eIES_IOSend;
-        iievent.deviceIdx = (uintptr_t)touch;
+        iievent.deviceIdx = (int)touch;
         iievent.asyncPos.x = pt.x;
         iievent.asyncPos.y = pt.y;
             
@@ -237,7 +237,7 @@ SIOSInputDelegate* g_IOSInputDelegate = NULL;
         
         SIOSInputEvent iievent;
         iievent.motionType = eIET_finger;
-        iievent.deviceIdx = (uintptr_t)touch;
+        iievent.deviceIdx = (int)touch;
         iievent.asyncPos.x = pt.x;
         iievent.asyncPos.y = pt.y;
         

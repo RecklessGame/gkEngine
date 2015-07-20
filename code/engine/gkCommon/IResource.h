@@ -125,7 +125,7 @@ public:
 #ifdef __x86_64__
         m_resLock = new gkScopedLock<gkMutexLock>( eLGID_Resource, (uint64)this );
 #else
-		m_resLock = new gkScopedLock<gkMutexLock>( eLGID_Resource, (uintptr_t)this );
+		m_resLock = new gkScopedLock<gkMutexLock>( eLGID_Resource, (uint32)this );
 #endif
 
 
