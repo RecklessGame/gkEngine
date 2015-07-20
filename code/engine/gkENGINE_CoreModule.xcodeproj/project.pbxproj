@@ -25,10 +25,30 @@
 			name = gkENGINE_CoreModule_OSX;
 			productName = gkENGINE_CoreModule_OSX;
 		};
+		139C31D01B5CA70400F82386 /* gkENGINE_CoreModule_iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 139C31E11B5CA70400F82386 /* Build configuration list for PBXAggregateTarget "gkENGINE_CoreModule_iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+				139C31E71B5CA71200F82386 /* PBXTargetDependency */,
+				139C31D31B5CA70400F82386 /* PBXTargetDependency */,
+				139C31D51B5CA70400F82386 /* PBXTargetDependency */,
+				139C31D71B5CA70400F82386 /* PBXTargetDependency */,
+				139C31D91B5CA70400F82386 /* PBXTargetDependency */,
+				139C31DB1B5CA70400F82386 /* PBXTargetDependency */,
+				139C31DD1B5CA70400F82386 /* PBXTargetDependency */,
+				139C31DF1B5CA70400F82386 /* PBXTargetDependency */,
+			);
+			name = gkENGINE_CoreModule_iOS;
+			productName = gkENGINE_CoreModule_OSX;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		133AB4CC1B2CA64B00800420 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133AB4CB1B2CA64B00800420 /* OpenGL.framework */; };
+		139C31CB1B5C9B9600F82386 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139C31CA1B5C9B9600F82386 /* AppKit.framework */; };
+		139C31CF1B5C9BBE00F82386 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139C31CE1B5C9BBE00F82386 /* AGL.framework */; };
 		A01A53831AC5C2AB00665B07 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09799571AC5BD8900173F60 /* EAGLView.mm */; };
 		A01A53841AC5C2AB00665B07 /* gkRenderContextIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09799591AC5BD8900173F60 /* gkRenderContextIOS.mm */; };
 		A01A53851AC5C2AB00665B07 /* TouchView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A097995E1AC5BD8A00173F60 /* TouchView.mm */; };
@@ -110,7 +130,6 @@
 		A07D4B3D1799AEC800C36005 /* StableHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D4B181799AEC800C36005 /* StableHeader.cpp */; };
 		A07D4B471799B31200C36005 /* dllmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D4B451799B31200C36005 /* dllmain.cpp */; };
 		A08C56F31734BE8500CA593D /* gkIOSLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = A08C56F11734BE8500CA593D /* gkIOSLog.mm */; };
-		A0950EFE179BF797002C8759 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0950EFD179BF797002C8759 /* AppKit.framework */; };
 		A097991C1AC5BBB800173F60 /* DDsTextureLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A09798F31AC5BB3000173F60 /* DDsTextureLoader.cpp */; };
 		A097991D1AC5BBB800173F60 /* dllmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A09798F61AC5BB3000173F60 /* dllmain.cpp */; };
 		A097991E1AC5BBB800173F60 /* gkAuxRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A09798F81AC5BB3000173F60 /* gkAuxRenderer.cpp */; };
@@ -281,6 +300,62 @@
 			remoteGlobalIDString = A02235A218895A84004B1475;
 			remoteInfo = gkAnimation;
 		};
+		139C31D41B5CA70400F82386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8A8BC115BEC9F50039AACB;
+			remoteInfo = gkSystem;
+		};
+		139C31D61B5CA70400F82386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8A8BD015BEC9FD0039AACB;
+			remoteInfo = gkInput;
+		};
+		139C31D81B5CA70400F82386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8A8BDF15BECA260039AACB;
+			remoteInfo = gkGameObjectSystem;
+		};
+		139C31DA1B5CA70400F82386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8A8BEE15BECA300039AACB;
+			remoteInfo = gkGameFramework;
+		};
+		139C31DC1B5CA70400F82386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03FCC8A1732B9C700FFA4DF;
+			remoteInfo = gkCore;
+		};
+		139C31DE1B5CA70400F82386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A07D493D1786476D000F2DA7;
+			remoteInfo = gkFont;
+		};
+		139C31E01B5CA70400F82386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02235A218895A84004B1475;
+			remoteInfo = gkAnimation;
+		};
+		139C31E61B5CA71200F82386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8A8BB215BEC9ED0039AACB;
+			remoteInfo = gkRendererGLES2;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -315,6 +390,9 @@
 
 /* Begin PBXFileReference section */
 		133AB4CB1B2CA64B00800420 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		139C31CA1B5C9B9600F82386 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		139C31CC1B5C9BAE00F82386 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		139C31CE1B5C9BBE00F82386 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AGL.framework; sourceTree = DEVELOPER_DIR; };
 		A01A53871AC5E0EF00665B07 /* glExtension.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glExtension.cpp; sourceTree = "<group>"; };
 		A01A53881AC5E0EF00665B07 /* glExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glExtension.h; sourceTree = "<group>"; };
 		A02235A318895A84004B1475 /* libgkAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgkAnimation.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -702,8 +780,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139C31CF1B5C9BBE00F82386 /* AGL.framework in Frameworks */,
+				139C31CB1B5C9B9600F82386 /* AppKit.framework in Frameworks */,
 				133AB4CC1B2CA64B00800420 /* OpenGL.framework in Frameworks */,
-				A0950EFE179BF797002C8759 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1477,6 +1556,9 @@
 		FF8A8BA215BEC9990039AACB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				139C31CE1B5C9BBE00F82386 /* AGL.framework */,
+				139C31CC1B5C9BAE00F82386 /* GLKit.framework */,
+				139C31CA1B5C9B9600F82386 /* AppKit.framework */,
 				133AB4CB1B2CA64B00800420 /* OpenGL.framework */,
 				A07D495D17865623000F2DA7 /* libfreetype2.a */,
 				A0950EFD179BF797002C8759 /* AppKit.framework */,
@@ -1786,6 +1868,7 @@
 				A07D493D1786476D000F2DA7 /* gkFont */,
 				A02235A218895A84004B1475 /* gkAnimation */,
 				133AB4B51B2C7A7B00800420 /* gkENGINE_CoreModule_OSX */,
+				139C31D01B5CA70400F82386 /* gkENGINE_CoreModule_iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -2020,6 +2103,46 @@
 			target = A02235A218895A84004B1475 /* gkAnimation */;
 			targetProxy = 133AB4C91B2C7A9D00800420 /* PBXContainerItemProxy */;
 		};
+		139C31D31B5CA70400F82386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8A8BC115BEC9F50039AACB /* gkSystem */;
+			targetProxy = 139C31D41B5CA70400F82386 /* PBXContainerItemProxy */;
+		};
+		139C31D51B5CA70400F82386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8A8BD015BEC9FD0039AACB /* gkInput */;
+			targetProxy = 139C31D61B5CA70400F82386 /* PBXContainerItemProxy */;
+		};
+		139C31D71B5CA70400F82386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8A8BDF15BECA260039AACB /* gkGameObjectSystem */;
+			targetProxy = 139C31D81B5CA70400F82386 /* PBXContainerItemProxy */;
+		};
+		139C31D91B5CA70400F82386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8A8BEE15BECA300039AACB /* gkGameFramework */;
+			targetProxy = 139C31DA1B5CA70400F82386 /* PBXContainerItemProxy */;
+		};
+		139C31DB1B5CA70400F82386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03FCC8A1732B9C700FFA4DF /* gkCore */;
+			targetProxy = 139C31DC1B5CA70400F82386 /* PBXContainerItemProxy */;
+		};
+		139C31DD1B5CA70400F82386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A07D493D1786476D000F2DA7 /* gkFont */;
+			targetProxy = 139C31DE1B5CA70400F82386 /* PBXContainerItemProxy */;
+		};
+		139C31DF1B5CA70400F82386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A02235A218895A84004B1475 /* gkAnimation */;
+			targetProxy = 139C31E01B5CA70400F82386 /* PBXContainerItemProxy */;
+		};
+		139C31E71B5CA71200F82386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8A8BB215BEC9ED0039AACB /* gkRendererGLES2 */;
+			targetProxy = 139C31E61B5CA71200F82386 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -2059,6 +2182,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		139C31E21B5CA70400F82386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "gkENGINE_CoreModule_OSX copy";
+			};
+			name = Debug;
+		};
+		139C31E31B5CA70400F82386 /* Debug-OSX */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "gkENGINE_CoreModule_OSX copy";
+			};
+			name = "Debug-OSX";
+		};
+		139C31E41B5CA70400F82386 /* Release-OSX */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "gkENGINE_CoreModule_OSX copy";
+			};
+			name = "Release-OSX";
+		};
+		139C31E51B5CA70400F82386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "gkENGINE_CoreModule_OSX copy";
 			};
 			name = Release;
 		};
@@ -2505,9 +2656,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					gkCommon,
-					../thirdparty/rapidxml,
 					../thirdparty,
+					../thirdparty/rapidxml,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -2696,9 +2848,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					gkCommon,
 					../thirdparty,
 					../thirdparty/rapidxml,
+					../thirdparty/glew/include,
 					../thirdparty/glfw/include,
 					../thirdparty/oglsdk/include,
 				);
@@ -2729,9 +2883,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					gkCommon,
 					../thirdparty,
 					../thirdparty/rapidxml,
+					../thirdparty/glew/include,
 					../thirdparty/glfw/include,
 					../thirdparty/oglsdk/include,
 				);
@@ -2764,9 +2920,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					gkCommon,
 					../thirdparty,
 					../thirdparty/rapidxml,
+					../thirdparty/glew/include,
 					../thirdparty/glfw/include,
 					../thirdparty/oglsdk/include,
 				);
@@ -2796,9 +2954,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					gkCommon,
-					../thirdparty/rapidxml,
 					../thirdparty,
+					../thirdparty/rapidxml,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -2826,9 +2985,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					gkCommon,
 					../thirdparty,
 					../thirdparty/rapidxml,
+					../thirdparty/glew/include,
 					../thirdparty/glfw/include,
 					../thirdparty/oglsdk/include,
 				);
@@ -3016,9 +3177,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					gkCommon,
-					../thirdparty/rapidxml,
 					../thirdparty,
+					../thirdparty/rapidxml,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -3045,9 +3207,10 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					gkCommon,
-					../thirdparty/rapidxml,
 					../thirdparty,
+					../thirdparty/rapidxml,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LLVM_LTO = YES;
@@ -3256,6 +3419,17 @@
 				133AB4B81B2C7A7B00800420 /* Debug-OSX */,
 				133AB4B91B2C7A7B00800420 /* Release-OSX */,
 				133AB4BA1B2C7A7B00800420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		139C31E11B5CA70400F82386 /* Build configuration list for PBXAggregateTarget "gkENGINE_CoreModule_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				139C31E21B5CA70400F82386 /* Debug */,
+				139C31E31B5CA70400F82386 /* Debug-OSX */,
+				139C31E41B5CA70400F82386 /* Release-OSX */,
+				139C31E51B5CA70400F82386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
