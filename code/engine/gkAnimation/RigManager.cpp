@@ -5,7 +5,7 @@
 //#include <Animation/Animation/Rig/hkaPose.h>
 //#include <Common/Serialize/Util/hkLoader.h>
 //#include <Common/Serialize/Util/hkRootLevelContainer.h>
-#include "gkHavokAssetManagementUtil.h"
+#include "gkAssetManagementUtil.h"
 
 //////////////////////////////////////////////////////////////////////////
 hkaSkeleton* gkRigManager::loadRig( const TCHAR* name )
@@ -26,13 +26,14 @@ hkaSkeleton* gkRigManager::loadRig( const TCHAR* name )
 	_tcscpy_s( szPath, MAX_PATH, name );
 #endif
 
-	hkStringBuf assetFile(szPath); hkAssetManagementUtil::getFilePath(assetFile);
+	gkStdString assetFile(szPath);
+    gkAssetManagementUtil::getFilePath(assetFile);
 	hkRootLevelContainer* container = getAnimationPtr()->getGlobalLoader()->load( szPath );
-	HK_ASSERT2(0x27343437, container != HK_NULL , "Could not load asset");
+	HK_ASSERT2(0x27343437, container != NULL , "Could not load asset");
 
 	if (!container)
 	{
-		return false;
+		return NULL;
 	}
 
 	hkaAnimationContainer* ac = reinterpret_cast<hkaAnimationContainer*>( container->findObjectByType( hkaAnimationContainerClass.getName() ));

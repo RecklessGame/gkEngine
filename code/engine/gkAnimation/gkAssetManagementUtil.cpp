@@ -5,41 +5,45 @@
  */
 
 #include "StableHeader.h"
-#include "gkHavokAssetManagementUtil.h"
-#include <Common/Base/System/Io/IStream/hkIStream.h>
+#include "gkAssetManagementUtil.h"
+
+#include <fstream>
+using namespace std;
+
+//#include <Common/Base/System/Io/IStream/hkIStream.h>
 
 //#define NEED_PLATFORM_SPECIFIC_EXTENSION
 
-const char* hkAssetManagementUtil::getFileEnding(hkStringBuf& e, hkStructureLayout::LayoutRules rules)
+const char* gkAssetManagementUtil::getFileEnding(gkStdString& e, uint8_t rules)
 {
-	hkStructureLayout l;
-	e.printf("_L%d%d%d%d", 
-		rules.m_bytesInPointer,
-		rules.m_littleEndian? 1 : 0,
-		rules.m_reusePaddingOptimization? 1 : 0,
-		rules.m_emptyBaseClassOptimization? 1 : 0);
-	return e;
+    return "";
+//	hkStructureLayout l;
+//	e.printf("_L%d%d%d%d", 
+//		rules.m_bytesInPointer,
+//		rules.m_littleEndian? 1 : 0,
+//		rules.m_reusePaddingOptimization? 1 : 0,
+//		rules.m_emptyBaseClassOptimization? 1 : 0);
+//	return e;
 }
 
 static bool _fileExists( const char* filename )
 {
 	// Open
-	hkIfstream file( filename );
+    std::ifstream file;
 	
+    file.open(filename, std::ifstream::in);
 	// Check
-	if (file.isOk())
-	{
-		// Dummy read
-		char ch;
-		file.read( &ch , 1);
-		return file.isOk();
-	}
-
-	return false;
+    file.get();
+    return file.good();
 
 }
 
-const char* HK_CALL hkAssetManagementUtil::getFilePath( hkStringBuf& filename, hkStructureLayout::LayoutRules rules )
+const char* gkAssetManagementUtil::getFilePath( gkStdString& filename )
+{
+    return getFilePath( filename, 0/*hkStructureLayout::HostLayoutRules*/ );
+}
+
+const char* HK_CALL gkAssetManagementUtil::getFilePath( gkStdString& filename, uint8_t rules )
 {
 #ifdef NEED_PLATFORM_SPECIFIC_EXTENSION
 	if (! _fileExists( filename ) )
@@ -54,34 +58,31 @@ const char* HK_CALL hkAssetManagementUtil::getFilePath( hkStringBuf& filename, h
 	}
 #endif
 	
-#ifdef HK_DEBUG
-	{
-		int a0 = filename.lastIndexOf('\\');
-		int a1 = filename.lastIndexOf('/');
-		int aLen = filename.getLength() - 1; // last index
-		int mD0 = a0 >= 0? a0 : 0;
-		int mD1 = a1 >= 0? a1 : 0;
-		int maxSlash = mD0 > mD1? mD0 : mD1;
-		if ( (aLen - maxSlash) > 42 )
-		{
-			hkStringBuf w;
-			w.printf("Your file name [%s] is longer than 42 characters. May have issues on some consoles (like Xbox360).", filename.cString() );
-			HK_WARN(0x04324, w.cString() );
-		}
-	}
-#endif
-	return filename;
+//#ifdef HK_DEBUG
+//	{
+//		int a0 = filename.lastIndexOf('\\');
+//		int a1 = filename.lastIndexOf('/');
+//		int aLen = filename.getLength() - 1; // last index
+//		int mD0 = a0 >= 0? a0 : 0;
+//		int mD1 = a1 >= 0? a1 : 0;
+//		int maxSlash = mD0 > mD1? mD0 : mD1;
+//		if ( (aLen - maxSlash) > 42 )
+//		{
+//			hkStringBuf w;
+//			w.printf("Your file name [%s] is longer than 42 characters. May have issues on some consoles (like Xbox360).", filename.cString() );
+//			HK_WARN(0x04324, w.cString() );
+//		}
+//	}
+//#endif
+	return filename.c_str();
 }
 
-const char* hkAssetManagementUtil::getFilePath( hkStringBuf& filename )
-{
-	return getFilePath( filename, hkStructureLayout::HostLayoutRules );
-}
 
-const char* HK_CALL hkAssetManagementUtil::getFilePath( const char* pathIn, hkStringBuf& pathOut)
+
+const char* HK_CALL gkAssetManagementUtil::getFilePath( const char* pathIn, gkStdString& pathOut)
 {
 	pathOut = pathIn;
-	return getFilePath( pathOut, hkStructureLayout::HostLayoutRules );
+	return getFilePath( pathOut, 0/*hkStructureLayout::HostLayoutRules*/ );
 }
 
 /* 

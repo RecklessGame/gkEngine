@@ -26,7 +26,6 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 
 #include "gkPlatform.h"
-
 #include "gk_Math.h"
 
 #include "IAnimation.h"

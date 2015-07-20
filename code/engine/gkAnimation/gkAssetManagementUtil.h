@@ -35,22 +35,25 @@ Copyright (c) 2011-2015 Kaiming Yi
 #ifndef ASSET_MGT_UTIL_H
 #define ASSET_MGT_UTIL_H
 
-#include <Common/Base/hkBase.h>
-#include <Common/Serialize/Util/hkStructureLayout.h>
+#define HK_CALL
+
+#include "prerequistes.h"
+//#include <Common/Base/hkBase.h>
+//#include <Common/Serialize/Util/hkStructureLayout.h>
 
 // This class helps with asset management for our demos
-class hkAssetManagementUtil
+class gkAssetManagementUtil
 {
-	public:
-			/// Fill in the string e with the appropriate name identifier stuff
-		static const char* HK_CALL getFileEnding(hkStringBuf& e, hkStructureLayout::LayoutRules rules);
-
-			/// This class takes a general filename and converts it to a platform specific one
-		static const char* HK_CALL getFilePath( hkStringBuf& inout );
-		static const char* HK_CALL getFilePath( const char* pathIn, hkStringBuf& pathOut);
-
-					/// This class takes a general filename and converts it to a platform specific one
-		static const char* HK_CALL getFilePath( hkStringBuf& inout, hkStructureLayout::LayoutRules rules );
+public:
+    /// Fill in the string e with the appropriate name identifier stuff
+    static const char* HK_CALL getFileEnding(gkStdString& e, uint8_t rules);
+    
+    /// This class takes a general filename and converts it to a platform specific one
+    static const char* HK_CALL getFilePath( gkStdString& inout );
+    static const char* HK_CALL getFilePath( const char* pathIn, gkStdString& pathOut);
+    
+    /// This class takes a general filename and converts it to a platform specific one
+    static const char* HK_CALL getFilePath( gkStdString& inout, uint8_t rules );
 };
 
 #endif // ASSET_MGT_UTIL_H

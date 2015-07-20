@@ -3,20 +3,20 @@
 #include "CharacterInstance.h"
 #include "gkHkxMeshLoader.h"
 
-#include <Common/Base/Memory/System/Util/hkMemoryInitUtil.h>
-#include <Common/Base/Memory/Allocator/Malloc/hkMallocAllocator.h>
-
-#include <Common/Base/System/hkBaseSystem.h>
-#include <Common/Base/System/Error/hkDefaultError.h>
-#include <Common/Base/Memory/System/Util/hkMemoryInitUtil.h>
-#include <Common/Base/Monitor/hkMonitorStream.h>
-#include <Common/Base/Memory/System/hkMemorySystem.h>
-
-#include <Common/Base/Container/String/hkStringBuf.h>
-#include <Common/Base/Ext/hkBaseExt.h>
-
-#include <Common/Base/Thread/Job/ThreadPool/Cpu/hkCpuJobThreadPool.h>
-#include <Common/Base/Thread/JobQueue/hkJobQueue.h>
+//#include <Common/Base/Memory/System/Util/hkMemoryInitUtil.h>
+//#include <Common/Base/Memory/Allocator/Malloc/hkMallocAllocator.h>
+//
+//#include <Common/Base/System/hkBaseSystem.h>
+//#include <Common/Base/System/Error/hkDefaultError.h>
+//#include <Common/Base/Memory/System/Util/hkMemoryInitUtil.h>
+//#include <Common/Base/Monitor/hkMonitorStream.h>
+//#include <Common/Base/Memory/System/hkMemorySystem.h>
+//
+//#include <Common/Base/Container/String/hkStringBuf.h>
+//#include <Common/Base/Ext/hkBaseExt.h>
+//
+//#include <Common/Base/Thread/Job/ThreadPool/Cpu/hkCpuJobThreadPool.h>
+//#include <Common/Base/Thread/JobQueue/hkJobQueue.h>
 
 static void HK_CALL gkHavokErrorReport(const char* msg, void* userArgGivenToInit)
 {
