@@ -26,24 +26,26 @@ hkaSkeleton* gkRigManager::loadRig( const TCHAR* name )
 	_tcscpy_s( szPath, MAX_PATH, name );
 #endif
 
-	gkStdString assetFile(szPath);
-    gkAssetManagementUtil::getFilePath(assetFile);
-	hkRootLevelContainer* container = getAnimationPtr()->getGlobalLoader()->load( szPath );
-	HK_ASSERT2(0x27343437, container != NULL , "Could not load asset");
-
-	if (!container)
-	{
-		return NULL;
-	}
-
-	hkaAnimationContainer* ac = reinterpret_cast<hkaAnimationContainer*>( container->findObjectByType( hkaAnimationContainerClass.getName() ));
-
-	HK_ASSERT2(0x27343435, ac && (ac->m_skeletons.getSize() > 0), "No skeleton loaded");
-	hkaSkeleton* skeleton = ac->m_skeletons[0];
-
-	m_mapRigs.insert(RigMap::value_type(name, skeleton));
-
-	return skeleton;
+//	hkStringBuf assetFile(szPath);
+//    gkAssetManagementUtil::getFilePath(assetFile);
+//	hkRootLevelContainer* container = getAnimationPtr()->getGlobalLoader()->load( szPath );
+//	HK_ASSERT2(0x27343437, container != NULL , "Could not load asset");
+//
+//	if (!container)
+//	{
+//		return NULL;
+//	}
+//
+//	hkaAnimationContainer* ac = reinterpret_cast<hkaAnimationContainer*>( container->findObjectByType( hkaAnimationContainerClass.getName() ));
+//
+//	HK_ASSERT2(0x27343435, ac && (ac->m_skeletons.getSize() > 0), "No skeleton loaded");
+//	hkaSkeleton* skeleton = ac->m_skeletons[0];
+//
+//	m_mapRigs.insert(RigMap::value_type(name, skeleton));
+//
+//	return skeleton;
+    
+    return NULL;
 }
 //////////////////////////////////////////////////////////////////////////
 gkRigManager::gkRigManager()

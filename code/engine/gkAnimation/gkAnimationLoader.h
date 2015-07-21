@@ -26,15 +26,18 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 
 #pragma once
-#include <Common/Base/System/Io/Reader/hkStreamReader.h>
-#include "Common/Serialize/Util/hkLoader.h"
+//#include <Common/Base/System/Io/Reader/hkStreamReader.h>
+//#include "Common/Serialize/Util/hkLoader.h"
+
+#include "IAnimationLoader.h"
+#include "gkSeekableStreamReader.h"
 
 struct IResFile;
 class hkRootLevelContainer;
 
 //struct gkBindResReader : public hkSeekableStreamReader
 
-struct gkBindResReader : public hkSeekableStreamReader
+class gkBindResReader : public gkSeekableStreamReader
 {
 	gkBindResReader( const TCHAR* name );
 	~gkBindResReader();
@@ -61,16 +64,16 @@ struct gkBindResReader : public hkSeekableStreamReader
 	uint32 markpos;
 };
 
-class gkHavokLoader : public hkLoader
+class gkAnimationLoader : public IAnimationLoader
 {
 public:
-	gkHavokLoader(void);
-	~gkHavokLoader(void);
+	gkAnimationLoader(void);
+	~gkAnimationLoader(void);
 
-	virtual hkRootLevelContainer* load( const char* filename );
+	virtual gkAnimation* load( const char* filename );
 
-	virtual hkRootLevelContainer* load( hkStreamReader* reader );
+//	virtual gkAnimation* load( hkStreamReader* reader );
 
-	hkLoader* m_hkLoader;
+	IAnimationLoader* m_hkLoader;
 };
 
