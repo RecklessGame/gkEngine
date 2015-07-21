@@ -137,8 +137,8 @@ void gkFTFont::init( const gkFTFontKey& key, int height, int weight )
 	m_spaceWidth = m_height / 2;
 	m_useKernering = FT_HAS_KERNING( m_face );
 	m_ascend = 0;
-	m_ascend = m_face->size->metrics.ascender / 72;
-	m_lineGap = (m_face->size->metrics.height) / 64;
+	m_ascend = (int32)(m_face->size->metrics.ascender) / 72;
+	m_lineGap = (int32)(m_face->size->metrics.height) / 64;
 }
 
 void gkFTFont::addTexture()
@@ -151,16 +151,16 @@ void gkFTFont::addTexture()
 
 	// set params
 	createlist[_T("d3dpool")]		=	_T("D3DX_DEFAULT");
-	createlist[_T("usage")]		=	_T("RAW");
+	createlist[_T("usage")]         =	_T("RAW");
 	createlist[_T("size")]			=	_T(table_texture_width_str);
 	createlist[_T("format")]		=	_T("A8");
 
 	TCHAR strName[MAX_PATH];
-#ifdef __x86_64__
-	_stprintf( strName, _T("FONTMAP_%u_%d"), (uint64)this, m_textRenderIndex );
-#else
-    _stprintf( strName, _T("FONTMAP_%u_%d"), (uint32)this, m_textRenderIndex );
-#endif
+//#ifdef __x86_64__
+//	_stprintf( strName, _T("FONTMAP_%u_%d"), (uint64)this, m_textRenderIndex );
+//#else
+    _stprintf( strName, _T("FONTMAP_%lu_%d"), (UINT_PTR)this, m_textRenderIndex );
+//#endif
 	gkTexturePtr tex = gEnv->pSystem->getTextureMngPtr()->create( strName, _T("font"), &createlist );
 
 	gkFontRenderable renderable;

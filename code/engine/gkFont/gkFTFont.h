@@ -85,8 +85,8 @@ private:
 	int m_weight;
 	int m_spaceWidth;
 
-	int m_ascend;
-	int m_lineGap;
+	int32 m_ascend;
+	int32 m_lineGap;
 
 	int m_useKernering;
 	

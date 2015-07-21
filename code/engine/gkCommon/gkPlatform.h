@@ -1,4 +1,4 @@
-﻿//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 /*
 Copyright (c) 2011-2015 Kaiming Yi
 	
@@ -318,23 +318,23 @@ inline void gkOpenModule( HINSTANCE& hHandle, const TCHAR* moduleName)
 // STD PLATFORM DEFINE
 #if defined( OS_WIN32 )
 #	include <hash_map>
-#	define gkHashMap stdext::hash_map
+#	define gkHashMap            stdext::hash_map
 #else
-#	define gkHashMap std::map
+#	define gkHashMap            std::map
 #endif
 
 //////////////////////////////////////////////////////////////////////////
 // string binding
 #if defined( UNICODE ) || defined( _UNICODE )
-#	define gkStdString std::wstring
-#	define gkStdStringstream std::wstringstream
-#	define gkStdOStringstream std::wostringstream
-#	define gkStdIFstream wifstream
+#	define gkStdString          std::wstring
+#	define gkStdStringstream    std::wstringstream
+#	define gkStdOStringstream   std::wostringstream
+#	define gkStdIFstream        std::wifstream
 #else
-#	define gkStdString std::string
-#	define gkStdStringstream std::stringstream
-#	define gkStdOStringstream std::ostringstream
-#	define gkStdIFstream ifstream
+#	define gkStdString          std::string
+#	define gkStdStringstream    std::stringstream
+#	define gkStdOStringstream   std::ostringstream
+#	define gkStdIFstream        std::ifstream
 #endif
 
 //extern gkStdString GKNULLSTR;
@@ -368,9 +368,9 @@ inline void gkOpenModule( HINSTANCE& hHandle, const TCHAR* moduleName)
 #endif
 
 #ifdef OS_WIN32
-typedef uint32 gk_thread_id;
+typedef uint32      gk_thread_id;
 #else
-typedef pthread_t gk_thread_id;
+typedef pthread_t   gk_thread_id;
 #endif
 
 

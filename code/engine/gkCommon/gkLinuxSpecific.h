@@ -1,4 +1,4 @@
-﻿//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 /*
 Copyright (c) 2011-2015 Kaiming Yi
 	
@@ -87,20 +87,22 @@ typedef unsigned short			uint16;
 typedef unsigned int            uint32;
 typedef unsigned long long      u64;
 
-typedef unsigned int            DWORD;
+typedef unsigned long           DWORD;
 typedef unsigned long           * LPDWORD;
 typedef DWORD                   DWORD_PTR;
-#ifdef __x86_64__ 
-typedef long                    INT_PTR, *PINT_PTR;
-typedef unsigned long           UINT_PTR, *PUINT_PTR;
-typedef uint64                  gk_ptr_type;
-#else
-typedef int                     INT_PTR, *PINT_PTR;
-typedef unsigned int            UINT_PTR, *PUINT_PTR;
-typedef uint32                  gk_ptr_type;
-#endif
+//#ifdef __x86_64__ 
+//typedef long                    INT_PTR, *PINT_PTR;
+//typedef unsigned long           UINT_PTR, *PUINT_PTR;
+//typedef uint64                  gk_ptr_type;
+//#else
+//typedef intptr_t                INT_PTR, *PINT_PTR;
+//typedef uintptr_t               UINT_PTR, *PUINT_PTR;
+//typedef uint32                  gk_ptr_type;
+//#endif
 
-
+typedef intptr_t                INT_PTR, *PINT_PTR;
+typedef uintptr_t               UINT_PTR, *PUINT_PTR;
+typedef UINT_PTR                gk_ptr_type;
 
 typedef char                    * LPSTR, * PSTR;
 
@@ -168,8 +170,8 @@ typedef unsigned char           byte;
 #define TCHAR char
 //typedef const TCHAR *const TCHAR*;
 #define CHAR char
-#define MAX_PATH          260
-#define _T(varr)	varr
+#define MAX_PATH            260
+#define _T(varr)            varr
 
 #ifndef FALSE
 #define FALSE               0

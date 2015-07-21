@@ -35,7 +35,7 @@ gkVegetationBlockRenderable::gkVegetationBlockRenderable(gkTerrian* terrian, con
 	gkNameValuePairList createlist;
 	// set params
 	createlist[_T("type")] =	_T("GRASS_BLOCK");
-	_stprintf(buffer, _T("Veg_0x%x_%d_%d"), (gk_ptr_type)terrian, x, y);
+	_stprintf(buffer, _T("Veg_0x%lx_%d_%d"), (gk_ptr_type)terrian, x, y);
 
 	m_mesh = gEnv->pSystem->getMeshMngPtr()->create( buffer, _T("terrian"), &createlist );
 	m_mesh->load();
