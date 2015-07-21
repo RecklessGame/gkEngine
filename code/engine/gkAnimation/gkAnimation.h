@@ -27,84 +27,73 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 //////////////////////////////////////////////////////////////////////////
 //
-// yikaiming (C) 2013
+// yikaiming (C) 2014
 // gkENGINE Source File 
 //
-// Name:   	gkFTFont.h
+// Name:   	gkAnimationHavok.h
 // Desc:	
 // 	
 // 
-// Author:  YiKaiming
-// Date:	2013/6/30
+// Author:  gameKnife
+// Date:	2014/1/17
 // 
 //////////////////////////////////////////////////////////////////////////
 
-#ifndef _gkFTFont_h_
-#define _gkFTFont_h_
+#ifndef _gkAnimationHavok_h_
+#define _gkAnimationHavok_h_
 
-#include "gkPlatform.h"
-#include "gkFont.h"
-#include "ITexture.h"
-#include "gkFontRenderable.h"
+#include "prerequistes.h"
+#include "AnimationManager.h"
+#include "RigManager.h"
 
-typedef std::vector<gkMaterialPtr> gkMaterialPtrs;
+struct IGameObjectAnimLayer;
+struct IMeshLoader;
+class hkLoader;
+class gkCharacterInstance;
 
-typedef std::vector<gkFontRenderable> gkFontRenderables;
-
-class gkFTFont : public IFtFont
+class gkAnimation : public IAnimation
 {
 public:
-	gkFTFont(void);
-	~gkFTFont(void);
-	
-	void init( const gkFTFontKey& key, int height, int weight );
-	void destroy();
+	gkAnimation(void);
+	~gkAnimation(void);
 
-	virtual int getHeight() {return m_height;}
-	virtual int getWeight() {return m_weight;}
+	virtual void InitAnimation();
 
-	gkFTCharInfo& getCharacterInfo( wchar_t character );
-	void drawString( const TCHAR* strings, const Vec2& pos, const ColorB& color, uint32 alignment, uint32 depth_order = 0 );
-	Vec2i measureString( const char* strings );
-	Vec2i measureString( const wchar_t* strings );
+	virtual void DestroyAnimation();
 
-	int StepByCharacter( wchar_t thisChar, Vec3i &tmpPos, FT_UInt& glyphPrev );
+	virtual IGameObjectAnimLayer* CreateAnimLayer(const gkStdString& name);
 
-	void addTexture();
-	
-	void flush();
+	virtual void DestroyAnimLayer(const gkStdString& name);
 
-	void makeSureFaceSize();
+	virtual void DestroyAllAnimLayer();
 
-	bool equal( gkFTFontKey& other ); 
+	virtual IMeshLoader* getHKXMeshLoader();
+
+	virtual void _updateAnimation(float fElapsedTime);
+
+	// loader access
+	hkLoader*			getGlobalLoader() {return m_havokLoader;}
+	gkAnimationManager& getAnimationManager() {return m_animationManager;}
+	gkRigManager&		getRigManager() {return m_rigManager;}
 
 private:
-	gkFTFontKey m_key;
 
-	int m_height;
-	int m_weight;
-	int m_spaceWidth;
+	//////////////////////////////////////////////////////////////////////////
+	// memory and threading objects
+	hkMemoryRouter* memoryRouter;
 
-	int32 m_ascend;
-	int32 m_lineGap;
+	class hkJobThreadPool* threadPool;
+	class hkJobQueue* jobQueue ;
 
-	int m_useKernering;
-	
+	// loader
+	hkLoader*			m_havokLoader;
+	// animation assets managers
+	gkAnimationManager	m_animationManager;
+	gkRigManager		m_rigManager;
 
-	FT_Face m_face;
-	FT_Face m_face2;
-
-	gkFTCharMap m_charMap;
-
-	Vec3i m_textRenderBufferi;
-	int m_textRenderIndex;
-
-	gkFontRenderables m_renderables;
-	gkFontRenderable* m_current_renderable;
-
-	float m_pixelOffset;
+	typedef std::map<gkStdString, gkCharacterInstance*> AnimLayerMap;
+	AnimLayerMap m_mapAnimLayers;
 };
-
 
 #endif
 

@@ -27,84 +27,36 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 //////////////////////////////////////////////////////////////////////////
 //
-// yikaiming (C) 2013
-// gkENGINE Source File 
+// K&K Studio GameKnife ENGINE Source File
 //
-// Name:   	gkFTFont.h
-// Desc:	
+// Name:   	RigManager.h
+// Desc:		
 // 	
-// 
-// Author:  YiKaiming
-// Date:	2013/6/30
+// Author:  Kaiming
+// Date:	2012/4/5
+// Modify:	2012/4/5
 // 
 //////////////////////////////////////////////////////////////////////////
 
-#ifndef _gkFTFont_h_
-#define _gkFTFont_h_
+#ifndef _RigManager_h_
+#define _RigManager_h_
 
-#include "gkPlatform.h"
-#include "gkFont.h"
-#include "ITexture.h"
-#include "gkFontRenderable.h"
+class hkaSkeleton;
 
-typedef std::vector<gkMaterialPtr> gkMaterialPtrs;
-
-typedef std::vector<gkFontRenderable> gkFontRenderables;
-
-class gkFTFont : public IFtFont
+class gkRigManager
 {
 public:
-	gkFTFont(void);
-	~gkFTFont(void);
+	gkRigManager();
+	virtual ~gkRigManager();
 	
-	void init( const gkFTFontKey& key, int height, int weight );
-	void destroy();
+	hkaSkeleton* loadRig(const TCHAR* name);
 
-	virtual int getHeight() {return m_height;}
-	virtual int getWeight() {return m_weight;}
-
-	gkFTCharInfo& getCharacterInfo( wchar_t character );
-	void drawString( const TCHAR* strings, const Vec2& pos, const ColorB& color, uint32 alignment, uint32 depth_order = 0 );
-	Vec2i measureString( const char* strings );
-	Vec2i measureString( const wchar_t* strings );
-
-	int StepByCharacter( wchar_t thisChar, Vec3i &tmpPos, FT_UInt& glyphPrev );
-
-	void addTexture();
-	
-	void flush();
-
-	void makeSureFaceSize();
-
-	bool equal( gkFTFontKey& other ); 
+	void Init();
+	void Destroy();
 
 private:
-	gkFTFontKey m_key;
-
-	int m_height;
-	int m_weight;
-	int m_spaceWidth;
-
-	int32 m_ascend;
-	int32 m_lineGap;
-
-	int m_useKernering;
-	
-
-	FT_Face m_face;
-	FT_Face m_face2;
-
-	gkFTCharMap m_charMap;
-
-	Vec3i m_textRenderBufferi;
-	int m_textRenderIndex;
-
-	gkFontRenderables m_renderables;
-	gkFontRenderable* m_current_renderable;
-
-	float m_pixelOffset;
+	typedef std::map<gkStdString, hkaSkeleton*> RigMap;
+	RigMap m_mapRigs;
 };
 
-
 #endif
-

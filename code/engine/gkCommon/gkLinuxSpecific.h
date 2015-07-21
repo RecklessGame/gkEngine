@@ -1,4 +1,4 @@
-﻿//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 /*
 Copyright (c) 2011-2015 Kaiming Yi
 	
@@ -63,61 +63,63 @@ Copyright (c) 2011-2015 Kaiming Yi
 //////////////////////////////////////////////////////////////////////////
 // Define platform independent types.
 //////////////////////////////////////////////////////////////////////////
-typedef signed char         int8;
-typedef signed short        int16;
-typedef signed int					int32;
+typedef signed char             int8;
+typedef signed short            int16;
+typedef signed int              int32;
 typedef signed long long		int64;
 typedef signed long long		INT64;
-typedef unsigned char				uint8;
+typedef unsigned char           uint8;
 typedef unsigned short			uint16;
-typedef unsigned int				uint32;
-typedef unsigned long long	uint64;
+typedef unsigned int            uint32;
+typedef unsigned long long      uint64;
 
-typedef float               f32;
-typedef double              f64;
-typedef double         real;
+typedef float                   f32;
+typedef double                  f64;
+typedef double                  real;
 
 // old-style (will be removed soon) 
-typedef signed char         s8;
-typedef signed short        s16;
-typedef signed int         s32;
+typedef signed char             s8;
+typedef signed short            s16;
+typedef signed int              s32;
 typedef signed long long		s64;
-typedef unsigned char				u8;
+typedef unsigned char           u8;
 typedef unsigned short			uint16;
-typedef unsigned int				uint32;
-typedef unsigned long long	u64;
+typedef unsigned int            uint32;
+typedef unsigned long long      u64;
 
-typedef unsigned int				DWORD;
-typedef unsigned long*				LPDWORD;
-typedef DWORD								DWORD_PTR;
-#ifdef __x86_64__ 
-typedef long INT_PTR, *PINT_PTR;
-typedef unsigned long UINT_PTR, *PUINT_PTR;
-typedef uint64 gk_ptr_type;
-#else
-typedef int INT_PTR, *PINT_PTR;
-typedef unsigned int UINT_PTR, *PUINT_PTR;
-typedef uint32 gk_ptr_type;
-#endif
+typedef unsigned long           DWORD;
+typedef unsigned long           * LPDWORD;
+typedef DWORD                   DWORD_PTR;
+//#ifdef __x86_64__ 
+//typedef long                    INT_PTR, *PINT_PTR;
+//typedef unsigned long           UINT_PTR, *PUINT_PTR;
+//typedef uint64                  gk_ptr_type;
+//#else
+//typedef intptr_t                INT_PTR, *PINT_PTR;
+//typedef uintptr_t               UINT_PTR, *PUINT_PTR;
+//typedef uint32                  gk_ptr_type;
+//#endif
 
+typedef intptr_t                INT_PTR, *PINT_PTR;
+typedef uintptr_t               UINT_PTR, *PUINT_PTR;
+typedef UINT_PTR                gk_ptr_type;
 
+typedef char                    * LPSTR, * PSTR;
 
-typedef char *LPSTR, *PSTR;
+typedef long                    LONG_PTR, * PLONG_PTR, * PLONG;
+typedef unsigned long           ULONG_PTR, * PULONG_PTR;
 
-typedef long LONG_PTR, *PLONG_PTR, *PLONG;
-typedef unsigned long ULONG_PTR, *PULONG_PTR;
-
-typedef unsigned char				BYTE;
+typedef unsigned char           BYTE;
 typedef unsigned short			WORD;
-typedef void*								HWND;
-typedef UINT_PTR 						WPARAM;
-typedef LONG_PTR 						LPARAM;
-typedef LONG_PTR 						LRESULT;
+typedef void                    * HWND;
+typedef UINT_PTR                WPARAM;
+typedef LONG_PTR                LPARAM;
+typedef LONG_PTR                LRESULT;
 #define PLARGE_INTEGER LARGE_INTEGER*
 typedef const char *LPCSTR, *PCSTR;
-typedef long long						LONGLONG;
-typedef	ULONG_PTR						SIZE_T;
-typedef unsigned char				byte;
+typedef long long               LONGLONG;
+typedef	ULONG_PTR               SIZE_T;
+typedef unsigned char           byte;
 
 #define __int64		long long
 
@@ -168,8 +170,8 @@ typedef unsigned char				byte;
 #define TCHAR char
 //typedef const TCHAR *const TCHAR*;
 #define CHAR char
-#define MAX_PATH          260
-#define _T(varr)	varr
+#define MAX_PATH            260
+#define _T(varr)            varr
 
 #ifndef FALSE
 #define FALSE               0
