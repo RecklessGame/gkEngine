@@ -46,6 +46,16 @@ typedef long    LONG;
 typedef wxChar  TCHAR;
 typedef wxApp   CWinApp;
 
+typedef wxApp CWinApp;
+typedef wxObject            CObject;
+typedef wxEvtHandler        CCmdTarget;
+typedef wxCmdLineParser     CCommandLineInfo;
+typedef wxMenu              CMenu;
+typedef wxMenuBar           CMenuBar;
+typedef wxMenuItem          CMenuItem;
+typedef wxBusyCursor        CWaitCursor;
+typedef wxValidator         CDataExchange;
+
 #else 
 
 #define CWinApp             wxApp
