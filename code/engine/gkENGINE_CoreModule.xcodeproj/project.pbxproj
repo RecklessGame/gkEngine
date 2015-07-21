@@ -20,7 +20,6 @@
 				133AB4C41B2C7A9D00800420 /* PBXTargetDependency */,
 				133AB4C61B2C7A9D00800420 /* PBXTargetDependency */,
 				133AB4C81B2C7A9D00800420 /* PBXTargetDependency */,
-				133AB4CA1B2C7A9D00800420 /* PBXTargetDependency */,
 			);
 			name = gkENGINE_CoreModule_OSX;
 			productName = gkENGINE_CoreModule_OSX;
@@ -301,13 +300,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = A07D493D1786476D000F2DA7;
 			remoteInfo = gkFont;
-		};
-		133AB4C91B2C7A9D00800420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A02235A218895A84004B1475;
-			remoteInfo = gkAnimation;
 		};
 		139C31D41B5CA70400F82386 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2230,11 +2222,6 @@
 			isa = PBXTargetDependency;
 			target = A07D493D1786476D000F2DA7 /* gkFont */;
 			targetProxy = 133AB4C71B2C7A9D00800420 /* PBXContainerItemProxy */;
-		};
-		133AB4CA1B2C7A9D00800420 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A02235A218895A84004B1475 /* gkAnimation */;
-			targetProxy = 133AB4C91B2C7A9D00800420 /* PBXContainerItemProxy */;
 		};
 		139C31D31B5CA70400F82386 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

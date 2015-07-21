@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13C68C581B35D83F00EB562C /* libgkAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C4E1B35D83F00EB562C /* libgkAnimation.a */; };
 		13C68C591B35D83F00EB562C /* libgkCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C4F1B35D83F00EB562C /* libgkCore.a */; };
 		13C68C5A1B35D83F00EB562C /* libgkFont.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C501B35D83F00EB562C /* libgkFont.a */; };
 		13C68C5B1B35D83F00EB562C /* libgkGameFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C511B35D83F00EB562C /* libgkGameFramework.a */; };
@@ -62,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13C68C581B35D83F00EB562C /* libgkAnimation.a in Frameworks */,
 				13C68C591B35D83F00EB562C /* libgkCore.a in Frameworks */,
 				13C68C5A1B35D83F00EB562C /* libgkFont.a in Frameworks */,
 				13C68C5B1B35D83F00EB562C /* libgkGameFramework.a in Frameworks */,
