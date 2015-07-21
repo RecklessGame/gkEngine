@@ -70,6 +70,7 @@
 		139C32321B5CC58F00F82386 /* gkSkinRenderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32241B5CC58F00F82386 /* gkSkinRenderable.cpp */; };
 		139C32331B5CC58F00F82386 /* RigManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32271B5CC58F00F82386 /* RigManager.cpp */; };
 		139C32341B5CC58F00F82386 /* StableHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C32291B5CC58F00F82386 /* StableHeader.cpp */; };
+		13CC08A81B5E408600F9F703 /* gkSkeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13CC08A61B5E408600F9F703 /* gkSkeleton.cpp */; };
 		A01A53831AC5C2AB00665B07 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09799571AC5BD8900173F60 /* EAGLView.mm */; };
 		A01A53841AC5C2AB00665B07 /* gkRenderContextIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09799591AC5BD8900173F60 /* gkRenderContextIOS.mm */; };
 		A01A53851AC5C2AB00665B07 /* TouchView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A097995E1AC5BD8A00173F60 /* TouchView.mm */; };
@@ -98,8 +99,6 @@
 		A03FCD3A1732C1B600FFA4DF /* gkStaticObjRenderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05835C6172D27AB00B168C8 /* gkStaticObjRenderable.cpp */; };
 		A03FCD3B1732C1B600FFA4DF /* gkSun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05835C7172D27AB00B168C8 /* gkSun.cpp */; };
 		A03FCD3C1732C1B600FFA4DF /* gkTimeOfDayManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05835C8172D27AB00B168C8 /* gkTimeOfDayManager.cpp */; };
-		A058360F172D27CF00B168C8 /* ._gkGameFramework-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A0583601172D27CF00B168C8 /* ._gkGameFramework-Prefix.pch */; };
-		A0583610172D27CF00B168C8 /* gkGameFramework-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A0583602172D27CF00B168C8 /* gkGameFramework-Prefix.pch */; };
 		A0583611172D27CF00B168C8 /* dllmain.h in Headers */ = {isa = PBXBuildFile; fileRef = A0583606172D27CF00B168C8 /* dllmain.h */; };
 		A0583612172D27CF00B168C8 /* gkGameFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A0583607172D27CF00B168C8 /* gkGameFramework.h */; };
 		A0583613172D27CF00B168C8 /* Prerequisites.h in Headers */ = {isa = PBXBuildFile; fileRef = A0583608172D27CF00B168C8 /* Prerequisites.h */; };
@@ -108,7 +107,6 @@
 		A0583616172D27CF00B168C8 /* dllmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A058360C172D27CF00B168C8 /* dllmain.cpp */; };
 		A0583617172D27CF00B168C8 /* gkGameFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A058360D172D27CF00B168C8 /* gkGameFramework.cpp */; };
 		A0583618172D27CF00B168C8 /* StableHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A058360E172D27CF00B168C8 /* StableHeader.cpp */; };
-		A058362E172D27F500B168C8 /* gkGameObjectSystem-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A058361A172D27F500B168C8 /* gkGameObjectSystem-Prefix.pch */; };
 		A058362F172D27F500B168C8 /* dllmain.h in Headers */ = {isa = PBXBuildFile; fileRef = A0583620172D27F500B168C8 /* dllmain.h */; };
 		A0583630172D27F500B168C8 /* gkGameObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A0583621172D27F500B168C8 /* gkGameObject.h */; };
 		A0583631172D27F500B168C8 /* gkGameObjectSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = A0583622172D27F500B168C8 /* gkGameObjectSystem.h */; };
@@ -121,7 +119,6 @@
 		A0583638172D27F500B168C8 /* gkGameObjectSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A058362B172D27F500B168C8 /* gkGameObjectSystem.cpp */; };
 		A0583639172D27F500B168C8 /* StableHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A058362C172D27F500B168C8 /* StableHeader.cpp */; };
 		A058363A172D27F500B168C8 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A058362D172D27F500B168C8 /* stdafx.cpp */; };
-		A058365C172D280A00B168C8 /* gkInput-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A058363D172D280A00B168C8 /* gkInput-Prefix.pch */; };
 		A058365D172D280A00B168C8 /* dllmain.h in Headers */ = {isa = PBXBuildFile; fileRef = A0583642172D280A00B168C8 /* dllmain.h */; };
 		A058365E172D280A00B168C8 /* gkAndroidInput.h in Headers */ = {isa = PBXBuildFile; fileRef = A0583643172D280A00B168C8 /* gkAndroidInput.h */; };
 		A058365F172D280A00B168C8 /* gkInputDeviceBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A0583644172D280A00B168C8 /* gkInputDeviceBase.h */; };
@@ -434,6 +431,9 @@
 		139C32281B5CC58F00F82386 /* RigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigManager.h; sourceTree = "<group>"; };
 		139C32291B5CC58F00F82386 /* StableHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StableHeader.cpp; sourceTree = "<group>"; };
 		139C322A1B5CC58F00F82386 /* StableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StableHeader.h; sourceTree = "<group>"; };
+		13CC08A61B5E408600F9F703 /* gkSkeleton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkSkeleton.cpp; sourceTree = "<group>"; };
+		13CC08A71B5E408600F9F703 /* gkSkeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gkSkeleton.h; sourceTree = "<group>"; };
+		13CC08A91B5E417C00F9F703 /* IAnimationLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAnimationLoader.h; sourceTree = "<group>"; };
 		A01A53871AC5E0EF00665B07 /* glExtension.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glExtension.cpp; sourceTree = "<group>"; };
 		A01A53881AC5E0EF00665B07 /* glExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glExtension.h; sourceTree = "<group>"; };
 		A02235A318895A84004B1475 /* libgkAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgkAnimation.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -453,7 +453,6 @@
 		A03FCC8B1732B9C700FFA4DF /* libgkCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgkCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A058358F172D27AB00B168C8 /* GameKnifeCore.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GameKnifeCore.rc; sourceTree = "<group>"; };
 		A0583590172D27AB00B168C8 /* gk3DEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gk3DEngine.cpp; sourceTree = "<group>"; };
-		A0583591172D27AB00B168C8 /* gkCore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gkCore-Prefix.pch"; sourceTree = "<group>"; };
 		A0583595172D27AB00B168C8 /* gkParticleInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkParticleInstance.cpp; sourceTree = "<group>"; };
 		A0583596172D27AB00B168C8 /* gkParticleInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gkParticleInstance.h; sourceTree = "<group>"; };
 		A0583597172D27AB00B168C8 /* gkParticleRenderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkParticleRenderable.cpp; sourceTree = "<group>"; };
@@ -502,8 +501,6 @@
 		A05835C8172D27AB00B168C8 /* gkTimeOfDayManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkTimeOfDayManager.cpp; sourceTree = "<group>"; };
 		A05835C9172D27AB00B168C8 /* gkVtxLayerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkVtxLayerManager.cpp; sourceTree = "<group>"; };
 		A05835CA172D27AB00B168C8 /* gkVtxMovieListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkVtxMovieListener.cpp; sourceTree = "<group>"; };
-		A0583601172D27CF00B168C8 /* ._gkGameFramework-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "._gkGameFramework-Prefix.pch"; sourceTree = "<group>"; };
-		A0583602172D27CF00B168C8 /* gkGameFramework-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gkGameFramework-Prefix.pch"; sourceTree = "<group>"; };
 		A0583603172D27CF00B168C8 /* gkGameFramework.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gkGameFramework.vcxproj; sourceTree = "<group>"; };
 		A0583604172D27CF00B168C8 /* gkGameFramework.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gkGameFramework.vcxproj.filters; sourceTree = "<group>"; };
 		A0583606172D27CF00B168C8 /* dllmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dllmain.h; sourceTree = "<group>"; };
@@ -514,7 +511,6 @@
 		A058360C172D27CF00B168C8 /* dllmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dllmain.cpp; sourceTree = "<group>"; };
 		A058360D172D27CF00B168C8 /* gkGameFramework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkGameFramework.cpp; sourceTree = "<group>"; };
 		A058360E172D27CF00B168C8 /* StableHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StableHeader.cpp; sourceTree = "<group>"; };
-		A058361A172D27F500B168C8 /* gkGameObjectSystem-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gkGameObjectSystem-Prefix.pch"; sourceTree = "<group>"; };
 		A058361B172D27F500B168C8 /* gkGameObjectSystem.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gkGameObjectSystem.rc; sourceTree = "<group>"; };
 		A058361C172D27F500B168C8 /* gkGameObjectSystem.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gkGameObjectSystem.vcproj; sourceTree = "<group>"; };
 		A058361D172D27F500B168C8 /* gkGameObjectSystem.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gkGameObjectSystem.vcxproj; sourceTree = "<group>"; };
@@ -533,7 +529,6 @@
 		A058362C172D27F500B168C8 /* StableHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StableHeader.cpp; sourceTree = "<group>"; };
 		A058362D172D27F500B168C8 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
 		A058363C172D280A00B168C8 /* GameKnifeInput.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GameKnifeInput.rc; sourceTree = "<group>"; };
-		A058363D172D280A00B168C8 /* gkInput-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gkInput-Prefix.pch"; sourceTree = "<group>"; };
 		A058363E172D280A00B168C8 /* gkInput.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gkInput.vcproj; sourceTree = "<group>"; };
 		A058363F172D280A00B168C8 /* gkInput.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gkInput.vcxproj; sourceTree = "<group>"; };
 		A0583640172D280A00B168C8 /* gkInput.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gkInput.vcxproj.filters; sourceTree = "<group>"; };
@@ -892,6 +887,9 @@
 				139C32261B5CC58F00F82386 /* prerequistes.h */,
 				139C32291B5CC58F00F82386 /* StableHeader.cpp */,
 				139C322A1B5CC58F00F82386 /* StableHeader.h */,
+				13CC08A61B5E408600F9F703 /* gkSkeleton.cpp */,
+				13CC08A71B5E408600F9F703 /* gkSkeleton.h */,
+				13CC08A91B5E417C00F9F703 /* IAnimationLoader.h */,
 			);
 			path = gkAnimation;
 			sourceTree = "<group>";
@@ -1015,7 +1013,6 @@
 				A07D4B461799B31200C36005 /* dllmain.h */,
 				A058358F172D27AB00B168C8 /* GameKnifeCore.rc */,
 				A0583590172D27AB00B168C8 /* gk3DEngine.cpp */,
-				A0583591172D27AB00B168C8 /* gkCore-Prefix.pch */,
 				A0583595172D27AB00B168C8 /* gkParticleInstance.cpp */,
 				A0583596172D27AB00B168C8 /* gkParticleInstance.h */,
 				A0583597172D27AB00B168C8 /* gkParticleRenderable.cpp */,
@@ -1087,8 +1084,6 @@
 		A0583600172D27CF00B168C8 /* gkGameFramework */ = {
 			isa = PBXGroup;
 			children = (
-				A0583601172D27CF00B168C8 /* ._gkGameFramework-Prefix.pch */,
-				A0583602172D27CF00B168C8 /* gkGameFramework-Prefix.pch */,
 				A0583603172D27CF00B168C8 /* gkGameFramework.vcxproj */,
 				A0583604172D27CF00B168C8 /* gkGameFramework.vcxproj.filters */,
 				A0583605172D27CF00B168C8 /* include */,
@@ -1122,7 +1117,6 @@
 		A0583619172D27F500B168C8 /* gkGameObjectSystem */ = {
 			isa = PBXGroup;
 			children = (
-				A058361A172D27F500B168C8 /* gkGameObjectSystem-Prefix.pch */,
 				A058361B172D27F500B168C8 /* gkGameObjectSystem.rc */,
 				A058361C172D27F500B168C8 /* gkGameObjectSystem.vcproj */,
 				A058361D172D27F500B168C8 /* gkGameObjectSystem.vcxproj */,
@@ -1164,7 +1158,6 @@
 			isa = PBXGroup;
 			children = (
 				A058363C172D280A00B168C8 /* GameKnifeInput.rc */,
-				A058363D172D280A00B168C8 /* gkInput-Prefix.pch */,
 				A058363E172D280A00B168C8 /* gkInput.vcproj */,
 				A058363F172D280A00B168C8 /* gkInput.vcxproj */,
 				A0583640172D280A00B168C8 /* gkInput.vcxproj.filters */,
@@ -1733,7 +1726,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A058365C172D280A00B168C8 /* gkInput-Prefix.pch in Headers */,
 				A058365D172D280A00B168C8 /* dllmain.h in Headers */,
 				A058365E172D280A00B168C8 /* gkAndroidInput.h in Headers */,
 				A058365F172D280A00B168C8 /* gkInputDeviceBase.h in Headers */,
@@ -1754,7 +1746,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A058362E172D27F500B168C8 /* gkGameObjectSystem-Prefix.pch in Headers */,
 				A058362F172D27F500B168C8 /* dllmain.h in Headers */,
 				A0583630172D27F500B168C8 /* gkGameObject.h in Headers */,
 				A0583631172D27F500B168C8 /* gkGameObjectSystem.h in Headers */,
@@ -1769,8 +1760,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A058360F172D27CF00B168C8 /* ._gkGameFramework-Prefix.pch in Headers */,
-				A0583610172D27CF00B168C8 /* gkGameFramework-Prefix.pch in Headers */,
 				A0583611172D27CF00B168C8 /* dllmain.h in Headers */,
 				A0583612172D27CF00B168C8 /* gkGameFramework.h in Headers */,
 				A0583613172D27CF00B168C8 /* Prerequisites.h in Headers */,
@@ -2020,6 +2009,7 @@
 				139C322C1B5CC58F00F82386 /* CharacterInstance.cpp in Sources */,
 				139C32311B5CC58F00F82386 /* gkHkxMeshLoader.cpp in Sources */,
 				139C322B1B5CC58F00F82386 /* AnimationManager.cpp in Sources */,
+				13CC08A81B5E408600F9F703 /* gkSkeleton.cpp in Sources */,
 				139C322E1B5CC58F00F82386 /* gkAnimation.cpp in Sources */,
 				139C32321B5CC58F00F82386 /* gkSkinRenderable.cpp in Sources */,
 				139C322D1B5CC58F00F82386 /* dllmain.cpp in Sources */,

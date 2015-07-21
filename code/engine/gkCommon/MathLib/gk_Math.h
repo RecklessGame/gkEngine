@@ -1,4 +1,4 @@
-﻿//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 /*
 Copyright (c) 2011-2015 Kaiming Yi
 	
@@ -42,8 +42,8 @@ Copyright (c) 2011-2015 Kaiming Yi
 //========================================================================================
 
 #include "gkPlatform.h"
-#include <math.h>
-#include <float.h>
+#include <cmath>
+#include <cfloat>
 #include "gk_ValidNumber.h"
 
 #ifdef OS_ANDROID

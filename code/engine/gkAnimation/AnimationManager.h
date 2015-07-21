@@ -41,7 +41,8 @@ Copyright (c) 2011-2015 Kaiming Yi
 #ifndef _AnimationManager_h_
 #define _AnimationManager_h_
 
-class hkaAnimationBinding;
+//class hkaAnimationBinding;
+class gkAnimation;
 
 class gkAnimationManager
 {
@@ -49,14 +50,16 @@ public:
 	gkAnimationManager();
 	virtual ~gkAnimationManager();
 
-	hkaAnimationBinding* loadAnimation(const TCHAR* name);
+//	hkaAnimationBinding* loadAnimation(const TCHAR* name);
+    gkAnimation* loadAnimation(const TCHAR* name);
 
 	void Init();
 	void Destroy();
 
 private:
-	typedef std::map<gkStdString, hkaAnimationBinding*> AnimationBindingMap;
-
+//	typedef std::map<gkStdString, hkaAnimationBinding*> AnimationBindingMap;
+    typedef std::map<gkStdString, gkAnimation*> AnimationBindingMap;
+    
 	AnimationBindingMap m_mapAnimations;
 };
 

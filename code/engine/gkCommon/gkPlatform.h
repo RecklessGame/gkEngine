@@ -136,25 +136,25 @@ Copyright (c) 2011-2015 Kaiming Yi
 #define DLL_EXPORT __attribute__ ((visibility("default")))
 #define DLL_IMPORT __attribute__ ((visibility("default")))
 
-#define DLL_OPEN(a) dlopen(a, RTLD_LAZY | RTLD_GLOBAL)
+#define DLL_OPEN(a)     dlopen(a, RTLD_LAZY | RTLD_GLOBAL)
 #define DLL_GETSYM(a,b) dlsym(a,b)
-#define DLL_FREE(a) dlclose(a)
+#define DLL_FREE(a)     dlclose(a)
 
-#define DLL_PREFIX _T("/data/app-lib/com.kkstudio.gkLauncherUniverse-1/lib")
-#define DLL_PREFIX_2 _T("/data/app-lib/com.kkstudio.gkLauncherUniverse-2/lib")
-#define DLL_SUFFIX _T(".so")
+#define DLL_PREFIX      _T("/data/app-lib/com.kkstudio.gkLauncherUniverse-1/lib")
+#define DLL_PREFIX_2    _T("/data/app-lib/com.kkstudio.gkLauncherUniverse-2/lib")
+#define DLL_SUFFIX      _T(".so")
 
 #else
-#define DLL_EXPORT __declspec(dllexport)
-#define DLL_IMPORT __declspec(dllimport)
+#define DLL_EXPORT      __declspec(dllexport)
+#define DLL_IMPORT      __declspec(dllimport)
 
-#define DLL_OPEN(a) LoadLibraryEx(a, NULL, LOAD_WITH_ALTERED_SEARCH_PATH);
+#define DLL_OPEN(a)     LoadLibraryEx(a, NULL, LOAD_WITH_ALTERED_SEARCH_PATH);
 #define DLL_GETSYM(a,b) GetProcAddress(a,b)
-#define DLL_FREE(a) FreeLibrary(a)
+#define DLL_FREE(a)     FreeLibrary(a)
 
-#define DLL_PREFIX _T("")
-#define DLL_PREFIX_2 _T("")
-#define DLL_SUFFIX _T(".dll")
+#define DLL_PREFIX      _T("")
+#define DLL_PREFIX_2    _T("")
+#define DLL_SUFFIX      _T(".dll")
 
 #endif
 
@@ -291,14 +291,9 @@ inline void gkOpenModule( HINSTANCE& hHandle, const TCHAR* moduleName)
 
 //////////////////////////////////////////////////////////////////////////
 // MATH LIB
-#include "math.h"
+#include <cmath>
 
-
-//#ifdef OS_IOS
-//#	include "gk_Math.h"
-//#else
-#	include "MathLib/gk_Math.h"
-//#endif
+#include "MathLib/gk_Math.h"
 
 //////////////////////////////////////////////////////////////////////////
 // STD INCLUDE
@@ -339,23 +334,23 @@ inline void gkOpenModule( HINSTANCE& hHandle, const TCHAR* moduleName)
 
 //extern gkStdString GKNULLSTR;
 
-#define GKNULLSTR _T("GKNULLSTR");
+#define GKNULLSTR               _T("GKNULLSTR");
 
 #ifndef UNIQUE_IFACE
 #define UNIQUE_IFACE
 #endif
 
 
-#define ANDROID_APP_NAME "com.kkstudio.gklauncher"
-#define ANDROID_APP_ROMROOT "/data/data/com.kkstudio.gklauncher/"
-#define ANDROID_APP_SDCARDROOT "/storage/emulated/legacy/gkENGINE/"
+#define ANDROID_APP_NAME        "com.kkstudio.gklauncher"
+#define ANDROID_APP_ROMROOT     "/data/data/com.kkstudio.gklauncher/"
+#define ANDROID_APP_SDCARDROOT  "/storage/emulated/legacy/gkENGINE/"
 
 // gkCommonStructs
 #include "gkCommonStructs.h"
 
 // gkPathtool
 //#if !defined( _AFXDLL ) && !defined( _3DSMAX )
-#	include "gkFilePath.h"
+#include "gkFilePath.h"
 //#endif
 
 

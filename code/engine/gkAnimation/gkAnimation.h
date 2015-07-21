@@ -48,7 +48,7 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 struct IGameObjectAnimLayer;
 struct IMeshLoader;
-class hkLoader;
+class IAnimationLoader;
 class gkCharacterInstance;
 
 class gkAnimation : public IAnimation
@@ -72,21 +72,21 @@ public:
 	virtual void _updateAnimation(float fElapsedTime);
 
 	// loader access
-	hkLoader*			getGlobalLoader() {return m_havokLoader;}
-	gkAnimationManager& getAnimationManager() {return m_animationManager;}
-	gkRigManager&		getRigManager() {return m_rigManager;}
+	IAnimationLoader*   getGlobalLoader()       {return m_havokLoader;}
+	gkAnimationManager& getAnimationManager()   {return m_animationManager;}
+	gkRigManager&		getRigManager()         {return m_rigManager;}
 
 private:
 
 	//////////////////////////////////////////////////////////////////////////
 	// memory and threading objects
-	hkMemoryRouter* memoryRouter;
+//	hkMemoryRouter* memoryRouter;
 
-	class hkJobThreadPool* threadPool;
-	class hkJobQueue* jobQueue ;
+//	class hkJobThreadPool* threadPool;
+//	class hkJobQueue* jobQueue ;
 
 	// loader
-	hkLoader*			m_havokLoader;
+	IAnimationLoader*   m_havokLoader;
 	// animation assets managers
 	gkAnimationManager	m_animationManager;
 	gkRigManager		m_rigManager;

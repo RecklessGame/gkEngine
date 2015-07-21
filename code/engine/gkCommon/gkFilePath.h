@@ -90,7 +90,7 @@ inline bool gkCheckFileExtension( const TCHAR* filename, const TCHAR* ext )
 inline bool is_end_with_slash( const TCHAR* filename )
 {
 	size_t len = _tcslen(filename);
-	if (filename[len-1] == _T('\\') || filename[len-1] == _T('/'))
+	if ( filename != NULL && len > 0 && (filename[len-1] == _T('\\') || filename[len-1] == _T('/')))
 	{
 		return true;
 	}
