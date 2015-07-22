@@ -1,4 +1,4 @@
-#bin bash
+#!/usr/bin
 
 echo "...Build debug universal library...."
 for BUILD_ARCH in "i386" "x86_64"; do
