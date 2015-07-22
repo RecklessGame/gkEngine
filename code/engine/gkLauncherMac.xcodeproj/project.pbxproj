@@ -292,6 +292,11 @@
 					"/Users/zhudelun/Documents/MyWork/@github.com/gkEngine/exec/ios/Debug-iphoneos",
 					"$(PROJECT_DIR)/solutions/DerivedData/gkENGINE_xcode/Build/Products",
 				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-L../thirdparty/freetype/lib/osx",
+					"-lfreetype2-universal-debug",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -353,6 +358,11 @@
 					"\"$(SRCROOT)/../../exec/ios/Debug-OSX\"",
 					"/Users/zhudelun/Documents/MyWork/@github.com/gkEngine/exec/ios/Debug-iphoneos",
 					"$(PROJECT_DIR)/solutions/DerivedData/gkENGINE_xcode/Build/Products",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-L../thirdparty/freetype/lib/osx",
+					"-lfreetype2-universal-release",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -456,6 +466,7 @@
 					"/Users/zhudelun/Documents/MyWork/@github.com/gkEngine/exec/ios/Debug-iphoneos",
 					"$(PROJECT_DIR)/solutions/DerivedData/gkENGINE_xcode/Build/Products",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -477,6 +488,7 @@
 					"/Users/zhudelun/Documents/MyWork/@github.com/gkEngine/exec/ios/Debug-iphoneos",
 					"$(PROJECT_DIR)/solutions/DerivedData/gkENGINE_xcode/Build/Products",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
