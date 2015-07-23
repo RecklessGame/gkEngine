@@ -27,6 +27,17 @@ IGameFramework* g_pGame;
 std::string macBundlePath()
 {
     char path[PATH_MAX];
+    
+//    NSString* appBundlePath = [NSBundle mainBundle].bundlePath;
+//    
+//    NSString* appRunningPath = [appBundlePath substringToIndex: [appBundlePath rangeOfString: [appBundlePath lastPathComponent]].location];
+//    
+//    if ([appRunningPath hasSuffix: @"/"]) {
+//        appRunningPath  = [appRunningPath substringToIndex: [appRunningPath rangeOfString:@"/" options: NSBackwardsSearch].location];
+//    }
+//    
+//    strncpy(path, appRunningPath.UTF8String, PATH_MAX);
+    
     CFBundleRef mainBundle = CFBundleGetMainBundle();
     assert(mainBundle);
     
@@ -49,10 +60,10 @@ std::string macBundlePath()
     if (lastpath) {
         *lastpath = 0;
     }
-    lastpath = strrchr(path, '/');
-    if (lastpath) {
-        *lastpath = 0;
-    }
+//    lastpath = strrchr(path, '/');
+//    if (lastpath) {
+//        *lastpath = 0;
+//    }
     
     return std::string(path);
 }
@@ -60,12 +71,6 @@ std::string macBundlePath()
 std::string iOSDocumentsDirectory()
 {
     return macBundlePath();
-    
-    
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    
-    return std::string([documentsDirectory cStringUsingEncoding:NSASCIIStringEncoding]);
 }
 
 std::string macCachePath()
