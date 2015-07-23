@@ -242,13 +242,6 @@
 			remoteGlobalIDString = 0FB30B2D4BDE47298593D82D;
 			remoteInfo = glfw;
 		};
-		2DA7B893F9654AD48A05206E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A885E743A7844D49BC477F71 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E5A5E21F55244A883652B88;
-			remoteInfo = ZERO_CHECK;
-		};
 		3166F470B72F44B398559E84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A885E743A7844D49BC477F71 /* Project object */;
@@ -1855,7 +1848,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D898CEC22CFF42558BB9E2C0 /* PBXTargetDependency */,
 			);
 			name = glfw;
 			productName = glfw;
@@ -3060,11 +3052,6 @@
 			isa = PBXTargetDependency;
 			target = 0FB30B2D4BDE47298593D82D /* glfw */;
 			targetProxy = 4B4C833588784CC1A423F6FC /* PBXContainerItemProxy */;
-		};
-		D898CEC22CFF42558BB9E2C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E5A5E21F55244A883652B88 /* ZERO_CHECK */;
-			targetProxy = 2DA7B893F9654AD48A05206E /* PBXContainerItemProxy */;
 		};
 		E50534FEF5A048F189D294B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
