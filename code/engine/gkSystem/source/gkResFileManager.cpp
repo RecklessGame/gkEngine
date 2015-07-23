@@ -78,8 +78,8 @@ EFileStatus gkResFileManager::checkFileExist(const TCHAR* pszFilename, bool sear
 	FILE* fp = _tfopen( szFullPath, _T("r") );
 	if( fp )
 	{
+        fclose( fp );
 		return eFS_inDisk;
-		fclose( fp );
 	}
 
 	// not found
