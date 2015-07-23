@@ -53,6 +53,7 @@ public:
     
     virtual void startRender();
 	virtual void swapBuffer();
+    virtual void pollEvents();
     
     virtual void makeThreadContext(bool close);
     

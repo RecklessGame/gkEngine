@@ -47,12 +47,13 @@ public:
 	virtual ~IDeviceRenderContext() {}
 
 	virtual HWND initDevice(ISystemInitInfo& sii) =0;
-	virtual bool destroyDevice() =0;
+	virtual bool destroyDevice() = 0;
 
     virtual void startRender() {}
-	virtual void swapBuffer() =0;
+	virtual void swapBuffer() = 0;
+    virtual void pollEvents() = 0;
     
-    virtual void makeThreadContext(bool close = false) =0;
+    virtual void makeThreadContext(bool close = false) = 0;
 
 	virtual void resizeBackBuffer(int width, int height) {}
 };

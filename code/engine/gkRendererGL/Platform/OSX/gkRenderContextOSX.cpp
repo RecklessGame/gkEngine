@@ -1,4 +1,8 @@
-﻿#include "StableHeader.h"
+﻿
+
+#include "StableHeader.h"
+#include <GLFW/glfw3.h>
+
 #include "gkRenderContextOSX.h"
 #include "gkRendererGL330.h"
 
@@ -11,12 +15,15 @@ int lasty = 0;
 SInputSymbol* g_mouseSymbol[3];
 SInputSymbol* g_keyboardSymbol[512];
 
-void resize_window_callback(int width,int height)
+//// glfw3中已经有glfwWindow这种东东，因此之后的操作都是对g_glfwWindow的操作
+static GLFWwindow* g_glfwWindow = nullptr;
+
+void resize_window_callback(GLFWwindow* window, int width,int height)
 {
     gEnv->pRenderer->SetCurrContent( (HWND)1, 0, 0, width, height );
 }
 
-static void cursor_position_callback(int x, int y)
+static void cursor_position_callback(GLFWwindow* window, double x, double y)
 {
     static bool first = true;
     
@@ -50,7 +57,7 @@ static void cursor_position_callback(int x, int y)
     }
 }
 
-static void mouse_button_callback(int Button, int Action)
+static void mouse_button_callback(GLFWwindow* window, int Button, int Action, int mods)
 {
     if(!(gEnv->pInputManager))
     {
@@ -121,7 +128,7 @@ static void mouse_button_callback(int Button, int Action)
             }
 }
 
-static void GLFWCALL key_callback(int key, int action)
+static void GLFWCALL key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
     SInputEvent event;
     
@@ -160,7 +167,7 @@ static void GLFWCALL key_callback(int key, int action)
 //    }
 }
 
-static int GLFWCALL close_callback(void)
+static void GLFWCALL close_callback(GLFWwindow* window)
 {
     gEnv->pGameFramework->markClose();
 }
@@ -237,26 +244,26 @@ HWND gkDeviceRenderContext::initDevice(ISystemInitInfo& sii)
     MAP_KEY(  GLFW_KEY_DOWN  , Down);
     MAP_KEY(  GLFW_KEY_LEFT   ,      Left);
     MAP_KEY(  GLFW_KEY_RIGHT        , Right);
-    MAP_KEY(  GLFW_KEY_LSHIFT       , LShift);
-    MAP_KEY(  GLFW_KEY_RSHIFT  , RShift);
-    MAP_KEY(  GLFW_KEY_LCTRL      , LCtrl);
-    MAP_KEY(  GLFW_KEY_RCTRL      , RCtrl);
-    MAP_KEY(  GLFW_KEY_LALT , LAlt);
-    MAP_KEY(  GLFW_KEY_RALT, RAlt);
+    MAP_KEY(  GLFW_KEY_LEFT_SHIFT       , LShift);
+    MAP_KEY(  GLFW_KEY_RIGHT_SHIFT  , RShift);
+    MAP_KEY(  GLFW_KEY_LEFT_CONTROL      , LCtrl);
+    MAP_KEY(  GLFW_KEY_RIGHT_CONTROL      , RCtrl);
+    MAP_KEY(  GLFW_KEY_LEFT_ALT , LAlt);
+    MAP_KEY(  GLFW_KEY_RIGHT_ALT, RAlt);
     MAP_KEY(  GLFW_KEY_TAB, Tab);
     MAP_KEY(  GLFW_KEY_ENTER, Enter);
     MAP_KEY(  GLFW_KEY_BACKSPACE, Backspace);
     MAP_KEY(  GLFW_KEY_INSERT, Insert);
-    MAP_KEY(  GLFW_KEY_DEL, Delete);
+    MAP_KEY(  GLFW_KEY_DELETE, Delete);
 
-    MAP_KEY(  GLFW_KEY_PAGEUP, PgUp);
-    MAP_KEY(  GLFW_KEY_PAGEDOWN, PgDn);
+    MAP_KEY(  GLFW_KEY_PAGE_UP, PgUp);
+    MAP_KEY(  GLFW_KEY_PAGE_DOWN, PgDn);
     MAP_KEY(  GLFW_KEY_HOME, Home);
     MAP_KEY(  GLFW_KEY_END, End);
     
     MAP_KEY(  GLFW_KEY_SPACE, Space);
 
-    MAP_KEY(  GLFW_KEY_ESC, Escape);
+    MAP_KEY(  GLFW_KEY_ESCAPE, Escape);
     MAP_KEY(  GLFW_KEY_F1, F1);
     MAP_KEY(  GLFW_KEY_F2, F2);
     MAP_KEY(  GLFW_KEY_F3, F3);
@@ -270,9 +277,57 @@ HWND gkDeviceRenderContext::initDevice(ISystemInitInfo& sii)
     MAP_KEY(  GLFW_KEY_F11, F11);
     MAP_KEY(  GLFW_KEY_F12, F12);
 
+    do {
+        
+        if (NOT glfwInit()) {
+            break;
+        }
+        
+        glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
+        
+        glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+        
+#if defined(NDEBUG)
+        glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GL_FALSE);
+#else
+        glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GL_TRUE);
+#endif
+        
+        g_glfwWindow = glfwCreateWindow(sii.fWidth, sii.fHeight, "gkEngine Tech", NULL, NULL);
+        if (GK_ISNULL(g_glfwWindow)) {
+            break;
+        }
+        
+        glfwMakeContextCurrent(g_glfwWindow);
+        glfwSetMouseButtonCallback(g_glfwWindow, mouse_button_callback);
+        glfwSetCursorPosCallback(g_glfwWindow, cursor_position_callback);
+        glfwSetWindowCloseCallback(g_glfwWindow, close_callback);
+        glfwSetKeyCallback(g_glfwWindow, key_callback);
+        glfwSetWindowSizeCallback(g_glfwWindow, resize_window_callback);
+
+        glfwSwapInterval(0);
+        
+        return (HWND)1;
+    } while (false);
+    
+    if (g_glfwWindow) {
+        glfwDestroyWindow(g_glfwWindow);
+        g_glfwWindow = NULL;
+    }
+
+    if (g_glfwWindow == NULL) {
+        glfwTerminate();
+    }
+    
+    return (HWND)0;
+    
+    /*
     glfwInit();
     
-    glfwEnable(GLFW_AUTO_POLL_EVENTS); /* No explicit call to glfwPollEvents() */
+    glfwEnable(GLFW_AUTO_POLL_EVENTS); // No explicit call to glfwPollEvents()
     
     glfwOpenWindowHint(GLFW_WINDOW_NO_RESIZE, GL_FALSE);
     //if(version(Major, Minor) >= version(3, 2))
@@ -282,11 +337,11 @@ HWND gkDeviceRenderContext::initDevice(ISystemInitInfo& sii)
         
         glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
         
-#			if defined(NDEBUG)
+#if defined(NDEBUG)
         glfwOpenWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GL_FALSE);
-#			else
+#else
         glfwOpenWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GL_FALSE);
-#			endif
+#endif      /// NDEBUG
     }
     GLboolean Result = glfwOpenWindow(sii.fWidth, sii.fHeight, 0, 0, 0, 0, 24, 8, GLFW_WINDOW);
     assert(Result == GL_TRUE);
@@ -300,18 +355,24 @@ HWND gkDeviceRenderContext::initDevice(ISystemInitInfo& sii)
     glfwSetWindowSizeCallback(resize_window_callback);
 
     glfwSwapInterval(0);
-    
+    */
     return (HWND)1;
 }
 
 bool gkDeviceRenderContext::destroyDevice()
 {
     glfwTerminate();
+    return true;
 }
 
 void gkDeviceRenderContext::swapBuffer()
 {
-    glfwSwapBuffers();
+    glfwSwapBuffers(g_glfwWindow);
+}
+
+void gkDeviceRenderContext::pollEvents()
+{
+    glfwPollEvents();
 }
 
 gkDeviceRenderContext::~gkDeviceRenderContext()

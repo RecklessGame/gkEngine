@@ -43,8 +43,6 @@ Copyright (c) 2011-2015 Kaiming Yi
 #include "Prerequisites.h"
 #include "DeviceRenderContext.h"
 
-#include "GL/glfw.h"
-
 class gkDeviceRenderContext : public IDeviceRenderContext
 {
 public:
@@ -55,6 +53,7 @@ public:
 	virtual bool destroyDevice();
 
 	virtual void swapBuffer();
+    virtual void pollEvents();
 
 	virtual void makeThreadContext(bool close) {}
 };

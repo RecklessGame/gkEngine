@@ -130,6 +130,14 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 
 //////////////////////////////////////////////////////////////////////////
+/// common contidition usage symbol
+#define NOT     !
+#define AND     &&
+#define OR      ||
+
+#define GK_ISNULL(obj)      (obj) == NULL
+
+//////////////////////////////////////////////////////////////////////////
 // shared lib access define
 
 #if defined(COMPILER_GCC)

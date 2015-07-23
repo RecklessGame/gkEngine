@@ -1,4 +1,4 @@
-﻿//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 /*
 Copyright (c) 2011-2015 Kaiming Yi
 	
@@ -92,7 +92,12 @@ Copyright (c) 2011-2015 Kaiming Yi
 #import <OpenGL/OpenGL.h>
 #import <OpenGL/gl3.h>
 #import <OpenGL/gl3ext.h>
-#import <GL/glfw.h>
+#include <GLFW/glfw3.h>
+//#include <GLFW/glfw3native.h>
+#if GLFW_VERSION_MAJOR >= 3
+#undef GLFWCALL
+#define GLFWCALL 
+#endif
 
 #elif defined( OS_IOS )
 
