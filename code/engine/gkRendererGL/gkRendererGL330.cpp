@@ -707,6 +707,7 @@ bool gkRendererGL::RT_StartRender()
 	if (m_bSkipThisFrame == 0)
 	{
 		m_pDeviceContext->swapBuffer();
+        m_pDeviceContext->pollEvents();
 	}
 
 	m_bSkipThisFrame--;
