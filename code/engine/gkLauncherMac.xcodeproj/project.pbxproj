@@ -15,6 +15,7 @@
 		13C68C5E1B35D83F00EB562C /* libgkRendererGL330.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C541B35D83F00EB562C /* libgkRendererGL330.a */; };
 		13C68C601B35D83F00EB562C /* libgkSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C561B35D83F00EB562C /* libgkSystem.a */; };
 		13C68C611B35D83F00EB562C /* libTestCases.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C68C571B35D83F00EB562C /* libTestCases.a */; };
+		13DD09291B6086DE00BCF9AB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DD09281B6086DE00BCF9AB /* CoreVideo.framework */; };
 		A06034E917999A1900B2F4C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06034E817999A1900B2F4C6 /* CoreGraphics.framework */; };
 		A06034EB17999A2200B2F4C6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06034EA17999A2200B2F4C6 /* IOKit.framework */; };
 		A06034EC17999A2D00B2F4C6 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F19FC117928FFD00F788C5 /* AppKit.framework */; };
@@ -34,6 +35,7 @@
 		13C68C551B35D83F00EB562C /* libgkRendererGLES2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkRendererGLES2.a; path = "../../exec/ios/Debug-iphoneos/libgkRendererGLES2.a"; sourceTree = "<group>"; };
 		13C68C561B35D83F00EB562C /* libgkSystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgkSystem.a; path = solutions/DerivedData/gkENGINE_xcode/Build/Products/libgkSystem.a; sourceTree = "<group>"; };
 		13C68C571B35D83F00EB562C /* libTestCases.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestCases.a; path = solutions/DerivedData/gkENGINE_xcode/Build/Products/libTestCases.a; sourceTree = "<group>"; };
+		13DD09281B6086DE00BCF9AB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		A06034E11799925D00B2F4C6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		A06034E817999A1900B2F4C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A06034EA17999A2200B2F4C6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13DD09291B6086DE00BCF9AB /* CoreVideo.framework in Frameworks */,
 				13C68C591B35D83F00EB562C /* libgkCore.a in Frameworks */,
 				13C68C5A1B35D83F00EB562C /* libgkFont.a in Frameworks */,
 				13C68C5B1B35D83F00EB562C /* libgkGameFramework.a in Frameworks */,
@@ -111,6 +114,7 @@
 		A0F19FBD17928FFD00F788C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13DD09281B6086DE00BCF9AB /* CoreVideo.framework */,
 				13C68C4E1B35D83F00EB562C /* libgkAnimation.a */,
 				13C68C4F1B35D83F00EB562C /* libgkCore.a */,
 				13C68C501B35D83F00EB562C /* libgkFont.a */,
@@ -296,6 +300,8 @@
 					"-ObjC",
 					"-L../thirdparty/freetype/lib/osx",
 					"-lfreetype2-universal-debug",
+					"-L../thirdparty/glfw/lib",
+					"-lglfw3-universal-debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -363,6 +369,8 @@
 					"-ObjC",
 					"-L../thirdparty/freetype/lib/osx",
 					"-lfreetype2-universal-release",
+					"-L../thirdparty/glfw/lib",
+					"-lglfw3-universal-release",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

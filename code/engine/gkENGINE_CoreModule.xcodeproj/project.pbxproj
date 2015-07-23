@@ -3334,7 +3334,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-L../thirdparty/glfw/lib",
-					"-lglfw",
+					"-lglfw3-universal-debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3436,7 +3436,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-L../thirdparty/glfw/lib",
-					"-lglfw",
+					"-lglfw3-universal-release",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
