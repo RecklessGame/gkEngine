@@ -14,7 +14,7 @@
 #include <iostream>
 
 #include "crc32.h"
-#include "lzma\LzmaLib.h"
+#include <lzma/LzmaLib.h>
 
 struct gPakStatus
 {

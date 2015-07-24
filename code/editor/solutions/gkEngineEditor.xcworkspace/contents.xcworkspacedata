@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:gkPak/gkPak.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:gkStudio/gkStudio.xcodeproj">
    </FileRef>
 </Workspace>
