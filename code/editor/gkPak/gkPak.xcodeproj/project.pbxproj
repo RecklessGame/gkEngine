@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		132AB0061B6136F90032AC31 /* gkPak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 132AB0051B6136F90032AC31 /* gkPak.cpp */; };
+		1386D6231B637BCC002F0FD9 /* gkPak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1386D6221B637BCC002F0FD9 /* gkPak.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		132AAFF91B6136EA0032AC31 /* CopyFiles */ = {
+		1386D6161B637B7E002F0FD9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		132AAFFB1B6136EA0032AC31 /* gkPak */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gkPak; sourceTree = BUILT_PRODUCTS_DIR; };
-		132AB0051B6136F90032AC31 /* gkPak.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gkPak.cpp; path = ../../../gkPak/gkPak.cpp; sourceTree = "<group>"; };
+		1386D6181B637B7E002F0FD9 /* gkPak */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gkPak; sourceTree = BUILT_PRODUCTS_DIR; };
+		1386D6221B637BCC002F0FD9 /* gkPak.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkPak.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		132AAFF81B6136EA0032AC31 /* Frameworks */ = {
+		1386D6151B637B7E002F0FD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		132AAFF21B6136EA0032AC31 = {
+		1386D60F1B637B7E002F0FD9 = {
 			isa = PBXGroup;
 			children = (
-				132AAFFD1B6136EA0032AC31 /* gkPak */,
-				132AAFFC1B6136EA0032AC31 /* Products */,
+				1386D61A1B637B7E002F0FD9 /* gkPak */,
+				1386D6191B637B7E002F0FD9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		132AAFFC1B6136EA0032AC31 /* Products */ = {
+		1386D6191B637B7E002F0FD9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				132AAFFB1B6136EA0032AC31 /* gkPak */,
+				1386D6181B637B7E002F0FD9 /* gkPak */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		132AAFFD1B6136EA0032AC31 /* gkPak */ = {
+		1386D61A1B637B7E002F0FD9 /* gkPak */ = {
 			isa = PBXGroup;
 			children = (
-				132AB0051B6136F90032AC31 /* gkPak.cpp */,
+				1386D6221B637BCC002F0FD9 /* gkPak.cpp */,
 			);
 			path = gkPak;
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		132AAFFA1B6136EA0032AC31 /* gkPak */ = {
+		1386D6171B637B7E002F0FD9 /* gkPak */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 132AB0021B6136EA0032AC31 /* Build configuration list for PBXNativeTarget "gkPak" */;
+			buildConfigurationList = 1386D61F1B637B7E002F0FD9 /* Build configuration list for PBXNativeTarget "gkPak" */;
 			buildPhases = (
-				132AAFF71B6136EA0032AC31 /* Sources */,
-				132AAFF81B6136EA0032AC31 /* Frameworks */,
-				132AAFF91B6136EA0032AC31 /* CopyFiles */,
+				1386D6141B637B7E002F0FD9 /* Sources */,
+				1386D6151B637B7E002F0FD9 /* Frameworks */,
+				1386D6161B637B7E002F0FD9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,53 +79,53 @@
 			);
 			name = gkPak;
 			productName = gkPak;
-			productReference = 132AAFFB1B6136EA0032AC31 /* gkPak */;
+			productReference = 1386D6181B637B7E002F0FD9 /* gkPak */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		132AAFF31B6136EA0032AC31 /* Project object */ = {
+		1386D6101B637B7E002F0FD9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = TARSPowered;
 				TargetAttributes = {
-					132AAFFA1B6136EA0032AC31 = {
+					1386D6171B637B7E002F0FD9 = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
-			buildConfigurationList = 132AAFF61B6136EA0032AC31 /* Build configuration list for PBXProject "gkPak" */;
+			buildConfigurationList = 1386D6131B637B7E002F0FD9 /* Build configuration list for PBXProject "gkPak" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 132AAFF21B6136EA0032AC31;
-			productRefGroup = 132AAFFC1B6136EA0032AC31 /* Products */;
+			mainGroup = 1386D60F1B637B7E002F0FD9;
+			productRefGroup = 1386D6191B637B7E002F0FD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				132AAFFA1B6136EA0032AC31 /* gkPak */,
+				1386D6171B637B7E002F0FD9 /* gkPak */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		132AAFF71B6136EA0032AC31 /* Sources */ = {
+		1386D6141B637B7E002F0FD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132AB0061B6136F90032AC31 /* gkPak.cpp in Sources */,
+				1386D6231B637BCC002F0FD9 /* gkPak.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		132AB0001B6136EA0032AC31 /* Debug */ = {
+		1386D61D1B637B7E002F0FD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -160,6 +160,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../engine/gkCommon",
+					"$(SRCROOT)/../../thirdparty",
+					"$(SRCROOT)/../../thirdparty/lzma",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../thirdparty/lzma";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -167,7 +175,7 @@
 			};
 			name = Debug;
 		};
-		132AB0011B6136EA0032AC31 /* Release */ = {
+		1386D61E1B637B7E002F0FD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,34 +204,30 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../engine/gkCommon",
+					"$(SRCROOT)/../../thirdparty",
+					"$(SRCROOT)/../../thirdparty/lzma",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../thirdparty/lzma";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		132AB0031B6136EA0032AC31 /* Debug */ = {
+		1386D6201B637B7E002F0FD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../../thirdparty",
-					"$(SRCROOT)/../../../engine/gkCommon",
-					"$(SRCROOT)/../../../thirdparty/lzma",
-					"$(inherited)",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		132AB0041B6136EA0032AC31 /* Release */ = {
+		1386D6211B637B7E002F0FD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../../thirdparty",
-					"$(SRCROOT)/../../../engine/gkCommon",
-					"$(SRCROOT)/../../../thirdparty/lzma",
-					"$(inherited)",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -231,24 +235,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		132AAFF61B6136EA0032AC31 /* Build configuration list for PBXProject "gkPak" */ = {
+		1386D6131B637B7E002F0FD9 /* Build configuration list for PBXProject "gkPak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				132AB0001B6136EA0032AC31 /* Debug */,
-				132AB0011B6136EA0032AC31 /* Release */,
+				1386D61D1B637B7E002F0FD9 /* Debug */,
+				1386D61E1B637B7E002F0FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		132AB0021B6136EA0032AC31 /* Build configuration list for PBXNativeTarget "gkPak" */ = {
+		1386D61F1B637B7E002F0FD9 /* Build configuration list for PBXNativeTarget "gkPak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				132AB0031B6136EA0032AC31 /* Debug */,
-				132AB0041B6136EA0032AC31 /* Release */,
+				1386D6201B637B7E002F0FD9 /* Debug */,
+				1386D6211B637B7E002F0FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 132AAFF31B6136EA0032AC31 /* Project object */;
+	rootObject = 1386D6101B637B7E002F0FD9 /* Project object */;
 }
