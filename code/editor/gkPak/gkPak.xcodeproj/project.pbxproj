@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13339DED1B664337004305A9 /* Alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DDD1B664337004305A9 /* Alloc.c */; };
+		13339DEE1B664337004305A9 /* Bcj2.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DDE1B664337004305A9 /* Bcj2.c */; };
+		13339DEF1B664337004305A9 /* Bra.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DDF1B664337004305A9 /* Bra.c */; };
+		13339DF01B664337004305A9 /* Bra86.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DE01B664337004305A9 /* Bra86.c */; };
+		13339DF11B664337004305A9 /* BraIA64.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DE11B664337004305A9 /* BraIA64.c */; };
+		13339DF21B664337004305A9 /* CpuArch.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DE21B664337004305A9 /* CpuArch.c */; };
+		13339DF31B664337004305A9 /* Delta.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DE31B664337004305A9 /* Delta.c */; };
+		13339DF41B664337004305A9 /* LzFind.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DE41B664337004305A9 /* LzFind.c */; };
+		13339DF51B664337004305A9 /* Lzma2Dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DE51B664337004305A9 /* Lzma2Dec.c */; };
+		13339DF61B664337004305A9 /* Lzma2Enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DE61B664337004305A9 /* Lzma2Enc.c */; };
+		13339DF71B664337004305A9 /* Lzma86Dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DE71B664337004305A9 /* Lzma86Dec.c */; };
+		13339DF81B664337004305A9 /* Lzma86Enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DE81B664337004305A9 /* Lzma86Enc.c */; };
+		13339DF91B664337004305A9 /* LzmaDec.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DE91B664337004305A9 /* LzmaDec.c */; };
+		13339DFA1B664337004305A9 /* LzmaEnc.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DEA1B664337004305A9 /* LzmaEnc.c */; };
+		13339DFB1B664337004305A9 /* LzmaLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DEB1B664337004305A9 /* LzmaLib.c */; };
+		13339DFC1B664337004305A9 /* Sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 13339DEC1B664337004305A9 /* Sha256.c */; };
 		1386D6231B637BCC002F0FD9 /* gkPak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1386D6221B637BCC002F0FD9 /* gkPak.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +39,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13339DDD1B664337004305A9 /* Alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Alloc.c; path = ../../../thirdparty/lzma/Alloc.c; sourceTree = "<group>"; };
+		13339DDE1B664337004305A9 /* Bcj2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Bcj2.c; path = ../../../thirdparty/lzma/Bcj2.c; sourceTree = "<group>"; };
+		13339DDF1B664337004305A9 /* Bra.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Bra.c; path = ../../../thirdparty/lzma/Bra.c; sourceTree = "<group>"; };
+		13339DE01B664337004305A9 /* Bra86.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Bra86.c; path = ../../../thirdparty/lzma/Bra86.c; sourceTree = "<group>"; };
+		13339DE11B664337004305A9 /* BraIA64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = BraIA64.c; path = ../../../thirdparty/lzma/BraIA64.c; sourceTree = "<group>"; };
+		13339DE21B664337004305A9 /* CpuArch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CpuArch.c; path = ../../../thirdparty/lzma/CpuArch.c; sourceTree = "<group>"; };
+		13339DE31B664337004305A9 /* Delta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Delta.c; path = ../../../thirdparty/lzma/Delta.c; sourceTree = "<group>"; };
+		13339DE41B664337004305A9 /* LzFind.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LzFind.c; path = ../../../thirdparty/lzma/LzFind.c; sourceTree = "<group>"; };
+		13339DE51B664337004305A9 /* Lzma2Dec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Lzma2Dec.c; path = ../../../thirdparty/lzma/Lzma2Dec.c; sourceTree = "<group>"; };
+		13339DE61B664337004305A9 /* Lzma2Enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Lzma2Enc.c; path = ../../../thirdparty/lzma/Lzma2Enc.c; sourceTree = "<group>"; };
+		13339DE71B664337004305A9 /* Lzma86Dec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Lzma86Dec.c; path = ../../../thirdparty/lzma/Lzma86Dec.c; sourceTree = "<group>"; };
+		13339DE81B664337004305A9 /* Lzma86Enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Lzma86Enc.c; path = ../../../thirdparty/lzma/Lzma86Enc.c; sourceTree = "<group>"; };
+		13339DE91B664337004305A9 /* LzmaDec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LzmaDec.c; path = ../../../thirdparty/lzma/LzmaDec.c; sourceTree = "<group>"; };
+		13339DEA1B664337004305A9 /* LzmaEnc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LzmaEnc.c; path = ../../../thirdparty/lzma/LzmaEnc.c; sourceTree = "<group>"; };
+		13339DEB1B664337004305A9 /* LzmaLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LzmaLib.c; path = ../../../thirdparty/lzma/LzmaLib.c; sourceTree = "<group>"; };
+		13339DEC1B664337004305A9 /* Sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Sha256.c; path = ../../../thirdparty/lzma/Sha256.c; sourceTree = "<group>"; };
 		1386D6181B637B7E002F0FD9 /* gkPak */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gkPak; sourceTree = BUILT_PRODUCTS_DIR; };
 		1386D6221B637BCC002F0FD9 /* gkPak.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkPak.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -38,6 +70,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13339DDC1B6642D4004305A9 /* lzma */ = {
+			isa = PBXGroup;
+			children = (
+				13339DDD1B664337004305A9 /* Alloc.c */,
+				13339DDE1B664337004305A9 /* Bcj2.c */,
+				13339DDF1B664337004305A9 /* Bra.c */,
+				13339DE01B664337004305A9 /* Bra86.c */,
+				13339DE11B664337004305A9 /* BraIA64.c */,
+				13339DE21B664337004305A9 /* CpuArch.c */,
+				13339DE31B664337004305A9 /* Delta.c */,
+				13339DE41B664337004305A9 /* LzFind.c */,
+				13339DE51B664337004305A9 /* Lzma2Dec.c */,
+				13339DE61B664337004305A9 /* Lzma2Enc.c */,
+				13339DE71B664337004305A9 /* Lzma86Dec.c */,
+				13339DE81B664337004305A9 /* Lzma86Enc.c */,
+				13339DE91B664337004305A9 /* LzmaDec.c */,
+				13339DEA1B664337004305A9 /* LzmaEnc.c */,
+				13339DEB1B664337004305A9 /* LzmaLib.c */,
+				13339DEC1B664337004305A9 /* Sha256.c */,
+			);
+			name = lzma;
+			sourceTree = "<group>";
+		};
 		1386D60F1B637B7E002F0FD9 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +112,7 @@
 		1386D61A1B637B7E002F0FD9 /* gkPak */ = {
 			isa = PBXGroup;
 			children = (
+				13339DDC1B6642D4004305A9 /* lzma */,
 				1386D6221B637BCC002F0FD9 /* gkPak.cpp */,
 			);
 			path = gkPak;
@@ -118,7 +174,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13339DF21B664337004305A9 /* CpuArch.c in Sources */,
+				13339DF61B664337004305A9 /* Lzma2Enc.c in Sources */,
+				13339DF51B664337004305A9 /* Lzma2Dec.c in Sources */,
+				13339DEE1B664337004305A9 /* Bcj2.c in Sources */,
+				13339DF91B664337004305A9 /* LzmaDec.c in Sources */,
+				13339DFB1B664337004305A9 /* LzmaLib.c in Sources */,
+				13339DF31B664337004305A9 /* Delta.c in Sources */,
+				13339DF01B664337004305A9 /* Bra86.c in Sources */,
+				13339DF81B664337004305A9 /* Lzma86Enc.c in Sources */,
+				13339DF71B664337004305A9 /* Lzma86Dec.c in Sources */,
 				1386D6231B637BCC002F0FD9 /* gkPak.cpp in Sources */,
+				13339DF11B664337004305A9 /* BraIA64.c in Sources */,
+				13339DED1B664337004305A9 /* Alloc.c in Sources */,
+				13339DF41B664337004305A9 /* LzFind.c in Sources */,
+				13339DEF1B664337004305A9 /* Bra.c in Sources */,
+				13339DFA1B664337004305A9 /* LzmaEnc.c in Sources */,
+				13339DFC1B664337004305A9 /* Sha256.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +223,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
+					_7ZIP_ST,
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -198,6 +271,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = _7ZIP_ST;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -221,6 +295,7 @@
 		1386D6201B637B7E002F0FD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../thirdparty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -228,6 +303,7 @@
 		1386D6211B637B7E002F0FD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../thirdparty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -251,6 +327,7 @@
 				1386D6211B637B7E002F0FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
