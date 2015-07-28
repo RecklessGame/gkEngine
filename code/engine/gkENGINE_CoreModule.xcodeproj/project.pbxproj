@@ -399,6 +399,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1309BEB31B6775D00065B7F2 /* gkFilePath_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gkFilePath_OSX.h; sourceTree = "<group>"; };
 		1336D55D1B5E5BD10032E694 /* gkSeekableStreamReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkSeekableStreamReader.cpp; sourceTree = "<group>"; };
 		1336D55E1B5E5BD10032E694 /* gkSeekableStreamReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gkSeekableStreamReader.h; sourceTree = "<group>"; };
 		133AB4CB1B2CA64B00800420 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
@@ -1527,6 +1528,7 @@
 				A0D17CE4172E3D29001EBD1C /* gkCommonStructs.h */,
 				A0D17CE5172E3D29001EBD1C /* gkFilePath.h */,
 				A0D17CE6172E3D29001EBD1C /* gkFilePath_impl.h */,
+				1309BEB31B6775D00065B7F2 /* gkFilePath_OSX.h */,
 				A0D17CE7172E3D29001EBD1C /* gkIniParser.h */,
 				A0D17CE8172E3D29001EBD1C /* gkIOSSpecific.h */,
 				A0D17CE9172E3D29001EBD1C /* gkIterator.h */,

@@ -43,9 +43,7 @@ Copyright (c) 2011-2015 Kaiming Yi
 #include "gkPlatform.h"
 
 #ifdef OS_IOS
-std::string macCachePath();
-std::string macBundlePath(void);
-std::string iOSDocumentsDirectory(void);
+#   include "gkFilePath_OSX.h"
 #endif
 
 inline bool IsFileExist( const TCHAR* filename )
