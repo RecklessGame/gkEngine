@@ -1,23 +1,23 @@
 //
-//  gkFilePath_osx.h
+//  gkFilePath_iOS.h
 //  gkENGINE_CoreModule
 //
 //  Created by Eugene Stewart on 7/28/15.
 //
 //
 
-#ifndef gkENGINE_CoreModule_gkFilePath_osx_h
-#define gkENGINE_CoreModule_gkFilePath_osx_h
+#ifndef gkENGINE_CoreModule_gkFilePath_iOS_h
+#define gkENGINE_CoreModule_gkFilePath_iOS_h
 
-#if defined OS_APPLE
+#if defined OS_IOS
 
 #import <Foundation/Foundation.h>
 #import <CoreFoundation/CoreFoundation.h>
 
-std::string macBundlePath(void)
+// implement of macPathUtil
+std::string macBundlePath()
 {
     char path[PATH_MAX];
-    
     CFBundleRef mainBundle = CFBundleGetMainBundle();
     assert(mainBundle);
     
@@ -32,25 +32,15 @@ std::string macBundlePath(void)
     CFRelease(mainBundleURL);
     CFRelease(cfStringRef);
     
-    char* lastpath = strrchr(path, '/');
-    if (lastpath) {
-        *lastpath = 0;
-    }
-    lastpath = strrchr(path, '/');
-    if (lastpath) {
-        *lastpath = 0;
-    }
-    //    lastpath = strrchr(path, '/');
-    //    if (lastpath) {
-    //        *lastpath = 0;
-    //    }
-    
     return std::string(path);
 }
 
-std::string iOSDocumentsDirectory(void)
+std::string iOSDocumentsDirectory()
 {
-    return macBundlePath();
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    return std::string([documentsDirectory cStringUsingEncoding:NSASCIIStringEncoding]);
 }
 
 std::string macCachePath()
@@ -61,6 +51,6 @@ std::string macCachePath()
     return [[cachesDirectory stringByAppendingString:@"/"] cStringUsingEncoding:NSASCIIStringEncoding];
 }
 
-#endif      /// OS_APPLE
+#endif  /// OS_IOS
 
-#endif      /// gkENGINE_CoreModule_gkFilePath_osx_h
+#endif  /// gkENGINE_CoreModule_gkFilePath_iOS_h

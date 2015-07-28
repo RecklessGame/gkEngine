@@ -1,4 +1,4 @@
-﻿//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 /*
 Copyright (c) 2011-2015 Kaiming Yi
 	
@@ -42,9 +42,11 @@ Copyright (c) 2011-2015 Kaiming Yi
 
 #include "gkPlatform.h"
 
-#ifdef OS_IOS
+#if defined OS_APPLE
 #   include "gkFilePath_OSX.h"
-#endif
+#elif defined OS_IOS
+#   include "gkFilePath_iOS.h"
+#endif      /// end device
 
 inline bool IsFileExist( const TCHAR* filename )
 {

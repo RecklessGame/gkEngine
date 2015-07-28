@@ -56,7 +56,7 @@
 		13339DEB1B664337004305A9 /* LzmaLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LzmaLib.c; path = ../../../thirdparty/lzma/LzmaLib.c; sourceTree = "<group>"; };
 		13339DEC1B664337004305A9 /* Sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Sha256.c; path = ../../../thirdparty/lzma/Sha256.c; sourceTree = "<group>"; };
 		1386D6181B637B7E002F0FD9 /* gkPak */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gkPak; sourceTree = BUILT_PRODUCTS_DIR; };
-		1386D6221B637BCC002F0FD9 /* gkPak.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gkPak.cpp; sourceTree = SOURCE_ROOT; };
+		1386D6221B637BCC002F0FD9 /* gkPak.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = gkPak.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
