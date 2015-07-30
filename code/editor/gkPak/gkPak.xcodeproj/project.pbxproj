@@ -240,7 +240,7 @@
 					"$(SRCROOT)/../../thirdparty",
 					"$(SRCROOT)/../../thirdparty/lzma",
 				);
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../thirdparty/lzma";
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -285,7 +285,7 @@
 					"$(SRCROOT)/../../thirdparty",
 					"$(SRCROOT)/../../thirdparty/lzma",
 				);
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../thirdparty/lzma";
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
