@@ -6,49 +6,7 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		133AB4B51B2C7A7B00800420 /* gkENGINE_CoreModule_OSX */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 133AB4B61B2C7A7B00800420 /* Build configuration list for PBXAggregateTarget "gkENGINE_CoreModule_OSX" */;
-			buildPhases = (
-			);
-			dependencies = (
-				133AB4BC1B2C7A9D00800420 /* PBXTargetDependency */,
-				133AB4BE1B2C7A9D00800420 /* PBXTargetDependency */,
-				133AB4C01B2C7A9D00800420 /* PBXTargetDependency */,
-				133AB4C21B2C7A9D00800420 /* PBXTargetDependency */,
-				133AB4C41B2C7A9D00800420 /* PBXTargetDependency */,
-				133AB4C61B2C7A9D00800420 /* PBXTargetDependency */,
-				133AB4C81B2C7A9D00800420 /* PBXTargetDependency */,
-				133AB4CA1B2C7A9D00800420 /* PBXTargetDependency */,
-			);
-			name = gkENGINE_CoreModule_OSX;
-			productName = gkENGINE_CoreModule_OSX;
-		};
-		139C31D01B5CA70400F82386 /* gkENGINE_CoreModule_iOS */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 139C31E11B5CA70400F82386 /* Build configuration list for PBXAggregateTarget "gkENGINE_CoreModule_iOS" */;
-			buildPhases = (
-			);
-			dependencies = (
-				139C31E71B5CA71200F82386 /* PBXTargetDependency */,
-				139C31D31B5CA70400F82386 /* PBXTargetDependency */,
-				139C31D51B5CA70400F82386 /* PBXTargetDependency */,
-				139C31D71B5CA70400F82386 /* PBXTargetDependency */,
-				139C31D91B5CA70400F82386 /* PBXTargetDependency */,
-				139C31DB1B5CA70400F82386 /* PBXTargetDependency */,
-				139C31DD1B5CA70400F82386 /* PBXTargetDependency */,
-				139C31DF1B5CA70400F82386 /* PBXTargetDependency */,
-			);
-			name = gkENGINE_CoreModule_iOS;
-			productName = gkENGINE_CoreModule_OSX;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		133AB4CC1B2CA64B00800420 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133AB4CB1B2CA64B00800420 /* OpenGL.framework */; };
-		139C31CB1B5C9B9600F82386 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139C31CA1B5C9B9600F82386 /* AppKit.framework */; };
-		139C31CF1B5C9BBE00F82386 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139C31CE1B5C9BBE00F82386 /* AGL.framework */; };
 		A01A53831AC5C2AB00665B07 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09799571AC5BD8900173F60 /* EAGLView.mm */; };
 		A01A53841AC5C2AB00665B07 /* gkRenderContextIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A09799591AC5BD8900173F60 /* gkRenderContextIOS.mm */; };
 		A01A53851AC5C2AB00665B07 /* TouchView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A097995E1AC5BD8A00173F60 /* TouchView.mm */; };
@@ -127,9 +85,11 @@
 		A07D4954178647F9000F2DA7 /* gkFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D494B178647F9000F2DA7 /* gkFont.cpp */; };
 		A07D4955178647F9000F2DA7 /* gkFontRenderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D494D178647F9000F2DA7 /* gkFontRenderable.cpp */; };
 		A07D4957178647F9000F2DA7 /* gkFTFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D4951178647F9000F2DA7 /* gkFTFont.cpp */; };
+		A07D495E17865623000F2DA7 /* libfreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A07D495D17865623000F2DA7 /* libfreetype2.a */; };
 		A07D4B3D1799AEC800C36005 /* StableHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D4B181799AEC800C36005 /* StableHeader.cpp */; };
 		A07D4B471799B31200C36005 /* dllmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A07D4B451799B31200C36005 /* dllmain.cpp */; };
 		A08C56F31734BE8500CA593D /* gkIOSLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = A08C56F11734BE8500CA593D /* gkIOSLog.mm */; };
+		A0950EFE179BF797002C8759 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0950EFD179BF797002C8759 /* AppKit.framework */; };
 		A097991C1AC5BBB800173F60 /* DDsTextureLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A09798F31AC5BB3000173F60 /* DDsTextureLoader.cpp */; };
 		A097991D1AC5BBB800173F60 /* dllmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A09798F61AC5BB3000173F60 /* dllmain.cpp */; };
 		A097991E1AC5BBB800173F60 /* gkAuxRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A09798F81AC5BB3000173F60 /* gkAuxRenderer.cpp */; };
@@ -243,121 +203,6 @@
 		FF8A8BF015BECA300039AACB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8A8BA315BEC9990039AACB /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		133AB4BB1B2C7A9D00800420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A07D4AE11799AE0300C36005;
-			remoteInfo = gkRendererGL330;
-		};
-		133AB4BD1B2C7A9D00800420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF8A8BC115BEC9F50039AACB;
-			remoteInfo = gkSystem;
-		};
-		133AB4BF1B2C7A9D00800420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF8A8BD015BEC9FD0039AACB;
-			remoteInfo = gkInput;
-		};
-		133AB4C11B2C7A9D00800420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF8A8BDF15BECA260039AACB;
-			remoteInfo = gkGameObjectSystem;
-		};
-		133AB4C31B2C7A9D00800420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF8A8BEE15BECA300039AACB;
-			remoteInfo = gkGameFramework;
-		};
-		133AB4C51B2C7A9D00800420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A03FCC8A1732B9C700FFA4DF;
-			remoteInfo = gkCore;
-		};
-		133AB4C71B2C7A9D00800420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A07D493D1786476D000F2DA7;
-			remoteInfo = gkFont;
-		};
-		133AB4C91B2C7A9D00800420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A02235A218895A84004B1475;
-			remoteInfo = gkAnimation;
-		};
-		139C31D41B5CA70400F82386 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF8A8BC115BEC9F50039AACB;
-			remoteInfo = gkSystem;
-		};
-		139C31D61B5CA70400F82386 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF8A8BD015BEC9FD0039AACB;
-			remoteInfo = gkInput;
-		};
-		139C31D81B5CA70400F82386 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF8A8BDF15BECA260039AACB;
-			remoteInfo = gkGameObjectSystem;
-		};
-		139C31DA1B5CA70400F82386 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF8A8BEE15BECA300039AACB;
-			remoteInfo = gkGameFramework;
-		};
-		139C31DC1B5CA70400F82386 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A03FCC8A1732B9C700FFA4DF;
-			remoteInfo = gkCore;
-		};
-		139C31DE1B5CA70400F82386 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A07D493D1786476D000F2DA7;
-			remoteInfo = gkFont;
-		};
-		139C31E01B5CA70400F82386 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A02235A218895A84004B1475;
-			remoteInfo = gkAnimation;
-		};
-		139C31E61B5CA71200F82386 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF8A8B9215BEC96C0039AACB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF8A8BB215BEC9ED0039AACB;
-			remoteInfo = gkRendererGLES2;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		A02235A118895A84004B1475 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -389,10 +234,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		133AB4CB1B2CA64B00800420 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
-		139C31CA1B5C9B9600F82386 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
-		139C31CC1B5C9BAE00F82386 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
-		139C31CE1B5C9BBE00F82386 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AGL.framework; sourceTree = DEVELOPER_DIR; };
 		A01A53871AC5E0EF00665B07 /* glExtension.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glExtension.cpp; sourceTree = "<group>"; };
 		A01A53881AC5E0EF00665B07 /* glExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glExtension.h; sourceTree = "<group>"; };
 		A02235A318895A84004B1475 /* libgkAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgkAnimation.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -772,6 +613,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07D495E17865623000F2DA7 /* libfreetype2.a in Frameworks */,
 				A07D493F1786476D000F2DA7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -780,9 +622,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				139C31CF1B5C9BBE00F82386 /* AGL.framework in Frameworks */,
-				139C31CB1B5C9B9600F82386 /* AppKit.framework in Frameworks */,
-				133AB4CC1B2CA64B00800420 /* OpenGL.framework in Frameworks */,
+				A0950EFE179BF797002C8759 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1556,10 +1396,6 @@
 		FF8A8BA215BEC9990039AACB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				139C31CE1B5C9BBE00F82386 /* AGL.framework */,
-				139C31CC1B5C9BAE00F82386 /* GLKit.framework */,
-				139C31CA1B5C9B9600F82386 /* AppKit.framework */,
-				133AB4CB1B2CA64B00800420 /* OpenGL.framework */,
 				A07D495D17865623000F2DA7 /* libfreetype2.a */,
 				A0950EFD179BF797002C8759 /* AppKit.framework */,
 				FF8A8BA315BEC9990039AACB /* Foundation.framework */,
@@ -1840,11 +1676,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
-				TargetAttributes = {
-					133AB4B51B2C7A7B00800420 = {
-						CreatedOnToolsVersion = 6.3.2;
-					};
-				};
 			};
 			buildConfigurationList = FF8A8B9515BEC96C0039AACB /* Build configuration list for PBXProject "gkENGINE_CoreModule" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1867,8 +1698,6 @@
 				A03FCC8A1732B9C700FFA4DF /* gkCore */,
 				A07D493D1786476D000F2DA7 /* gkFont */,
 				A02235A218895A84004B1475 /* gkAnimation */,
-				133AB4B51B2C7A7B00800420 /* gkENGINE_CoreModule_OSX */,
-				139C31D01B5CA70400F82386 /* gkENGINE_CoreModule_iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -2062,89 +1891,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		133AB4BC1B2C7A9D00800420 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A07D4AE11799AE0300C36005 /* gkRendererGL330 */;
-			targetProxy = 133AB4BB1B2C7A9D00800420 /* PBXContainerItemProxy */;
-		};
-		133AB4BE1B2C7A9D00800420 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF8A8BC115BEC9F50039AACB /* gkSystem */;
-			targetProxy = 133AB4BD1B2C7A9D00800420 /* PBXContainerItemProxy */;
-		};
-		133AB4C01B2C7A9D00800420 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF8A8BD015BEC9FD0039AACB /* gkInput */;
-			targetProxy = 133AB4BF1B2C7A9D00800420 /* PBXContainerItemProxy */;
-		};
-		133AB4C21B2C7A9D00800420 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF8A8BDF15BECA260039AACB /* gkGameObjectSystem */;
-			targetProxy = 133AB4C11B2C7A9D00800420 /* PBXContainerItemProxy */;
-		};
-		133AB4C41B2C7A9D00800420 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF8A8BEE15BECA300039AACB /* gkGameFramework */;
-			targetProxy = 133AB4C31B2C7A9D00800420 /* PBXContainerItemProxy */;
-		};
-		133AB4C61B2C7A9D00800420 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A03FCC8A1732B9C700FFA4DF /* gkCore */;
-			targetProxy = 133AB4C51B2C7A9D00800420 /* PBXContainerItemProxy */;
-		};
-		133AB4C81B2C7A9D00800420 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A07D493D1786476D000F2DA7 /* gkFont */;
-			targetProxy = 133AB4C71B2C7A9D00800420 /* PBXContainerItemProxy */;
-		};
-		133AB4CA1B2C7A9D00800420 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A02235A218895A84004B1475 /* gkAnimation */;
-			targetProxy = 133AB4C91B2C7A9D00800420 /* PBXContainerItemProxy */;
-		};
-		139C31D31B5CA70400F82386 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF8A8BC115BEC9F50039AACB /* gkSystem */;
-			targetProxy = 139C31D41B5CA70400F82386 /* PBXContainerItemProxy */;
-		};
-		139C31D51B5CA70400F82386 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF8A8BD015BEC9FD0039AACB /* gkInput */;
-			targetProxy = 139C31D61B5CA70400F82386 /* PBXContainerItemProxy */;
-		};
-		139C31D71B5CA70400F82386 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF8A8BDF15BECA260039AACB /* gkGameObjectSystem */;
-			targetProxy = 139C31D81B5CA70400F82386 /* PBXContainerItemProxy */;
-		};
-		139C31D91B5CA70400F82386 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF8A8BEE15BECA300039AACB /* gkGameFramework */;
-			targetProxy = 139C31DA1B5CA70400F82386 /* PBXContainerItemProxy */;
-		};
-		139C31DB1B5CA70400F82386 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A03FCC8A1732B9C700FFA4DF /* gkCore */;
-			targetProxy = 139C31DC1B5CA70400F82386 /* PBXContainerItemProxy */;
-		};
-		139C31DD1B5CA70400F82386 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A07D493D1786476D000F2DA7 /* gkFont */;
-			targetProxy = 139C31DE1B5CA70400F82386 /* PBXContainerItemProxy */;
-		};
-		139C31DF1B5CA70400F82386 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A02235A218895A84004B1475 /* gkAnimation */;
-			targetProxy = 139C31E01B5CA70400F82386 /* PBXContainerItemProxy */;
-		};
-		139C31E71B5CA71200F82386 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF8A8BB215BEC9ED0039AACB /* gkRendererGLES2 */;
-			targetProxy = 139C31E61B5CA71200F82386 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		A02235BC18895A84004B1475 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -2157,62 +1903,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		133AB4B71B2C7A7B00800420 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		133AB4B81B2C7A7B00800420 /* Debug-OSX */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = "Debug-OSX";
-		};
-		133AB4B91B2C7A7B00800420 /* Release-OSX */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = "Release-OSX";
-		};
-		133AB4BA1B2C7A7B00800420 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		139C31E21B5CA70400F82386 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "gkENGINE_CoreModule_OSX copy";
-			};
-			name = Debug;
-		};
-		139C31E31B5CA70400F82386 /* Debug-OSX */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "gkENGINE_CoreModule_OSX copy";
-			};
-			name = "Debug-OSX";
-		};
-		139C31E41B5CA70400F82386 /* Release-OSX */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "gkENGINE_CoreModule_OSX copy";
-			};
-			name = "Release-OSX";
-		};
-		139C31E51B5CA70400F82386 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "gkENGINE_CoreModule_OSX copy";
-			};
-			name = Release;
-		};
 		A02235C218895A84004B1475 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2537,7 +2227,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkCore.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2556,7 +2245,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/gkCore.dst;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -2575,7 +2263,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkFont.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2595,11 +2282,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/freetype/lib/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-L../thirdparty/freetype/lib",
-					"-lfreetype",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -2613,7 +2295,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/gkFont.dst;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -2628,11 +2309,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/freetype/lib/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-L../thirdparty/freetype/lib",
-					"-lfreetype",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
@@ -2642,12 +2318,13 @@
 		A07D4AD41799ACBC00C36005 /* Debug-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)";
 				DEAD_CODE_STRIPPING = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2656,12 +2333,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
-					../thirdparty,
 					../thirdparty/rapidxml,
+					../thirdparty,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -2673,7 +2349,6 @@
 		A07D4AD51799ACBC00C36005 /* Debug-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkRendererGLES2.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2694,7 +2369,6 @@
 		A07D4AD61799ACBC00C36005 /* Debug-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkSystem.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2704,11 +2378,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					gkCommon,
-					../thirdparty,
-					../thirdparty/rapidxml,
-				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/lzma/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
@@ -2721,7 +2390,6 @@
 		A07D4AD71799ACBC00C36005 /* Debug-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkInput.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2739,7 +2407,6 @@
 		A07D4AD81799ACBC00C36005 /* Debug-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkGameObjectSystem.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2757,7 +2424,6 @@
 		A07D4AD91799ACBC00C36005 /* Debug-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkGameFramework.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2776,7 +2442,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkCore.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2799,7 +2464,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkFont.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2819,11 +2483,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/freetype/lib/ios/$(CONFIGURATION)\"",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-L../thirdparty/freetype/lib",
-					"-lfreetype",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -2833,11 +2492,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks\"",
-					"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks",
-				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					_STATIC_LIB,
@@ -2848,18 +2502,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
-					../thirdparty,
 					../thirdparty/rapidxml,
-					../thirdparty/glew/include,
-					../thirdparty/glfw/include,
+					../thirdparty,
 					../thirdparty/oglsdk/include,
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-L../thirdparty/glfw/lib",
-					"-lglfw",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2869,10 +2515,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks\"",
-				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					_STATIC_LIB,
@@ -2883,18 +2525,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
-					../thirdparty,
 					../thirdparty/rapidxml,
-					../thirdparty/glew/include,
-					../thirdparty/glfw/include,
+					../thirdparty,
 					../thirdparty/oglsdk/include,
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-L../thirdparty/glfw/lib",
-					"-lglfw",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2904,12 +2538,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks\"",
-					"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks",
-				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					_STATIC_LIB,
@@ -2920,18 +2548,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
-					../thirdparty,
 					../thirdparty/rapidxml,
-					../thirdparty/glew/include,
-					../thirdparty/glfw/include,
+					../thirdparty,
 					../thirdparty/oglsdk/include,
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-L../thirdparty/glfw/lib",
-					"-lglfw",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2940,12 +2560,13 @@
 		A0950F02179C3E9E002C8759 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)";
 				DEAD_CODE_STRIPPING = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2954,12 +2575,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
-					../thirdparty,
 					../thirdparty/rapidxml,
+					../thirdparty,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = macosx;
@@ -2971,10 +2591,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks\"",
-				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					_STATIC_LIB,
@@ -2985,18 +2601,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
-					../thirdparty,
 					../thirdparty/rapidxml,
-					../thirdparty/glew/include,
-					../thirdparty/glfw/include,
+					../thirdparty,
 					../thirdparty/oglsdk/include,
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-L../thirdparty/glfw/lib",
-					"-lglfw",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3005,7 +2613,6 @@
 		A0950F04179C3E9E002C8759 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkRendererGLES2.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3026,7 +2633,6 @@
 		A0950F05179C3E9E002C8759 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkSystem.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3036,11 +2642,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					gkCommon,
-					../thirdparty,
-					../thirdparty/rapidxml,
-				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/lzma/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
@@ -3053,7 +2654,6 @@
 		A0950F06179C3E9E002C8759 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkInput.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3071,7 +2671,6 @@
 		A0950F07179C3E9E002C8759 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkGameObjectSystem.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3089,7 +2688,6 @@
 		A0950F08179C3E9E002C8759 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkGameFramework.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3108,7 +2706,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkCore.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3131,7 +2728,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkFont.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3151,11 +2747,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/freetype/lib/ios/$(CONFIGURATION)\"",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-L../thirdparty/freetype/lib",
-					"-lfreetype",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -3164,11 +2755,13 @@
 		FF8A8B9715BEC96C0039AACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)";
 				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3177,12 +2770,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
-					../thirdparty,
 					../thirdparty/rapidxml,
+					../thirdparty,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -3194,11 +2786,13 @@
 		FF8A8B9815BEC96C0039AACB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)";
 				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3207,12 +2801,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
 					gkCommon,
-					../thirdparty,
 					../thirdparty/rapidxml,
+					../thirdparty,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LLVM_LTO = YES;
 				OBJROOT = "../../intermediate/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -3224,7 +2817,6 @@
 		FF8A8BBC15BEC9ED0039AACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkRendererGLES2.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3245,7 +2837,6 @@
 		FF8A8BBD15BEC9ED0039AACB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/gkRendererGLES2.dst;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					TARGET_OS_IPHONE,
@@ -3266,7 +2857,6 @@
 		FF8A8BCB15BEC9F50039AACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkSystem.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3276,11 +2866,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					gkCommon,
-					../thirdparty,
-					../thirdparty/rapidxml,
-				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/lzma/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
@@ -3293,16 +2878,10 @@
 		FF8A8BCC15BEC9F50039AACB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/gkSystem.dst;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					gkCommon,
-					../thirdparty,
-					../thirdparty/rapidxml,
-				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../thirdparty/lzma/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
@@ -3316,7 +2895,6 @@
 		FF8A8BDA15BEC9FD0039AACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkInput.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3334,7 +2912,6 @@
 		FF8A8BDB15BEC9FD0039AACB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/gkInput.dst;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -3348,7 +2925,6 @@
 		FF8A8BE915BECA260039AACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkGameObjectSystem.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3366,7 +2942,6 @@
 		FF8A8BEA15BECA260039AACB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/gkGameObjectSystem.dst;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -3380,7 +2955,6 @@
 		FF8A8BF815BECA300039AACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/gkGameFramework.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3398,7 +2972,6 @@
 		FF8A8BF915BECA300039AACB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/gkGameFramework.dst;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -3412,28 +2985,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		133AB4B61B2C7A7B00800420 /* Build configuration list for PBXAggregateTarget "gkENGINE_CoreModule_OSX" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				133AB4B71B2C7A7B00800420 /* Debug */,
-				133AB4B81B2C7A7B00800420 /* Debug-OSX */,
-				133AB4B91B2C7A7B00800420 /* Release-OSX */,
-				133AB4BA1B2C7A7B00800420 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		139C31E11B5CA70400F82386 /* Build configuration list for PBXAggregateTarget "gkENGINE_CoreModule_iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				139C31E21B5CA70400F82386 /* Debug */,
-				139C31E31B5CA70400F82386 /* Debug-OSX */,
-				139C31E41B5CA70400F82386 /* Release-OSX */,
-				139C31E51B5CA70400F82386 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A02235C118895A84004B1475 /* Build configuration list for PBXNativeTarget "gkAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
